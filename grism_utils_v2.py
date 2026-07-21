@@ -2033,8 +2033,14 @@ class spectrum:
     # Deriving Calibration
     ######################
 
-    def load_stelib_spectrum(self, folder_path):
+    def load_ref_spectrum(self, folder_path):
         star_name = self.object_name.replace(" ", "").lower()
+
+        if star_name == 'alphalyr':
+            im, hdr = getdata('CALSPEC/alpha_lyr_mod_005.fits', 1, header=True)
+            self.ref_wave = [entry[0] for entry in im]
+            self.ref_flux = [entry[1] for entry in im]
+            return self.ref_wave, self.ref_flux
 
         for file in os.listdir(folder_path):
             file_lower = file.lower()
@@ -2164,10 +2170,14 @@ class spectrum:
                 wavelengths = [5889.95094, self.blue_telluric_wavelength, 6347.11, 6371.37, 6562.819, self.telluric_wavelength] 
                 wavelength_labels = [r"Na I 5890", r"O$_2$ $\gamma$ band", r"Si II 6347", r"Si II 6371", r"H$\alpha$", r"O$_2$ B band"]
                 pixel_guesses = [telluric_x - 2269, telluric_x - 1292, telluric_x - 1136, telluric_x - 1081, telluric_x - 652, telluric_x]
-            if cal_star in ['hr 7589', 'HR 7589']:
-                wavelengths = [5875.62510, self.blue_telluric_wavelength, 6560.14160, 6678.15174, self.telluric_wavelength] 
-                wavelength_labels = [r"He I 5876", r"O$_2$ $\gamma$ band", r"He I 6678",r"He I 6560", r"O$_2$ B band"]
-                pixel_guesses = [telluric_x - 2306, telluric_x - 1288, telluric_x - 657, telluric_x - 405, telluric_x]
+            # if cal_star in ['hr 7589', 'HR 7589']:
+            #     wavelengths = [5875.62510, self.blue_telluric_wavelength, 6560.14160, 6678.15174, self.telluric_wavelength] 
+            #     wavelength_labels = [r"He I 5876", r"O$_2$ $\gamma$ band", r"He I 6678",r"He I 6560", r"O$_2$ B band"]
+            #     pixel_guesses = [telluric_x - 2306, telluric_x - 1288, telluric_x - 657, telluric_x - 405, telluric_x]
+            if cal_star in ['Alpha Lyr']:
+                wavelengths = [6155.971, self.blue_telluric_wavelength, 6347.11, 6371.37, 6562.819, self.telluric_wavelength] 
+                wavelength_labels = [r"O I 6156", r"O$_2$ $\gamma$ band", r"Si II 6347", r"Si II 6371", r"H$\alpha$", r"O$_2$ B band"]
+                pixel_guesses = [telluric_x - 1575, telluric_x - 1288, telluric_x - 1130, telluric_x - 1077, telluric_x - 652, telluric_x]
         if filter == 'lrg':
             if self.camera == 'ASI Camer':
                 telluric_x = 1550
@@ -2492,6 +2502,8 @@ class spectrum:
             if self.object_name in ['hr 4963', 'HR 4963']:
                 # exclude_regions = [(6445, 6500), (6550, 6580)]
                 exclude_regions = [(6445, 6500),(6555, 6580)]
+            if self.object_name in ['Alpha Lyr']:
+                exclude_regions = [(6270, 6290), (6465, 6500), (6552, 6580), (6855, 6965), (7160, 7250)]
         if self.filter == 'lrg':
             knots = np.linspace(wave_grid.min() + 400, 7000, 105)
             if self.object_name in ['hr 718','HR 718']:

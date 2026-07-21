@@ -1,0 +1,238 @@
+SIMPLE  =                    T / File does conform to FITS standard             BITPIX  =                  -32 / Number of bits per data pixel                  NAXIS   =                    0 / number of data axes                            CRVAL1  =               4373.5 / Coordinate at reference pixel                  CDELT1  =                 0.05 / Coordinate increment                           VERSION = 'ISIS V5.9.0'        / Software version                               OBJNAME = 'V442 AND'           / Current name of the object                     DATE-OBS= '2017-09-01T22:55:48' / Date of observation start                     EXPTIME =                 1613 / [s] Total time of exposure                     EXPTIME2= '4 x 400 s'          / Exposure decomposition                         BSS_INST= 'MUSSOL  '           / Instrument                                     BSS_SITE= 'PIERA   '           / Observation site                               BSS_ITRP=                 9000 / Typical resolving power                        OBSERVER= 'J. Guarro'                                                           CUNIT1  = 'Angstrom'           / Wavelength unit                                CTYPE1  = 'Wavelength'         / Axis type                                      Q_CAL   = '0       '           / Quality flag 4-excellent                       CRPIX1  =                    1 / Reference pixel                                BSS_VHEL=                    0 / [km/s] Heliocentric speed                      BSS_COSM= 'Removed '                                                            BSS_TELL= 'None    '                                                            BSS_NORM= 'None    '                                                            BSS_ORD = '_v442and_20170901_955_' / Root name of order files                   SPE_RPOW=                 9000 / Spectral resolution power                      JD-OBS  =         2457998.4554 / JD start observation                           JD-MID  =         2457998.4648 / JD mid observation                             JD-HEL  =                    0 / JD heliocentric mid-obs                        GEO_LONG=                    0 / Obs. geographic longitude                      GEO_LAT =                    0 / Obs. geographic latitude                       GEO_ELEV=                    0 / Obs. geographic elevation                      COMMENT  following keywords added by BeSS                                       RA      =            15.972329 / Right ascension of the star (decimal degrees)  DEC     =            47.642295 / Declinaison of the star (decimal degrees)      BSS_NAME= 'V442 And          ' / Name of the star as recorded in  BeSS          TELESCOP= 'MEADE SC16+Reducteur' / Name of the telescope                        INSTRUME= 'MUSSOL (echelle ) ' / Name of the spectrograph                       DETNAM  = 'ATIK 460EX        ' / Name of the detector                           BSS_LONG=             1.753889 / Longitude of the site as recorded in BeSS      BSS_LAT =            41.519167 / Latitude of the site as recorded in BeSS       BSS_ELEV=           305.000000 / Elevation of the site as recorded in BeSS      DATE-END= '2017-09-01T23:22:41.000000000259' / date+time at exposure end        MID-HJD = 2457998.467313510128 / Heliocentric Julian Date at mid-exposure       BSS_RQVH=           -19.509400 / Required heliocentric velocity correction      COMMENT   BSS_VHEL shows the applied correction in km/s. If BSS_VHEL=0,         COMMENT   no correction has been applied. The required correction given         COMMENT   in BSS_RQVH (in km/s) is an escape velocity (redshift). To apply      COMMENT   it within Iraf, the keyword redshift must be set to -BSS_RQVH         COMMENT   and isvelocity must be set to "yes" in the dopcor task.               EQUINOX =          2000.000000 / Equinox                                        RADECSYS= 'FK5               ' / Coordinates system                             END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional binary table                     NAXIS1  =                   12 / width of table in bytes                        NAXIS2  =                 1861 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group (required keyword)              TFIELDS =                    3 / number of fields in each row                   TTYPE1  = 'WAVE    '           / label for field   1                            TFORM1  = '1E      '           / data format of field: 4-byte REAL              TUNIT1  = 'Angstrom'           / physical unit of field                         TTYPE2  = 'FLUX    '           / label for field   2                            TFORM2  = '1E      '           / data format of field: 4-byte REAL              TUNIT2  = 'UNKNOWN '           / physical unit of field                         TTYPE3  = 'ERROR   '           / label for field   3                            TFORM3  = '1E      '           / data format of field: 4-byte REAL              TUNIT3  = 'UNKNOWN '           / physical unit of field                         EXTNAME = 'SPECTRUM'           / name of this binary table extension            VOCLASS = 'Spectrum 1.00'      / VO Data Model                                  VOCREATE= 'Be Stars Spectra Database' / VO Creator                              DATE    = '2017-09-01T22:55:48' / Creation date and time                        BANDPASS= '        '           / SED Banpass                                    SPECBAND= 'Optical '           / DataID Banpass                                 OBJECT  = 'V442 And          ' / Source name                                    VOPUB   = 'ivo://obspm.fr'     / VO Publisher authority                         VOLOGO  = 'http://basebe.obspm.fr/basebe/Images/LogoBeSS.jpg' / VO Creator logo FLUX_UCD= 'phot.fluxDens;em.wl'                                                 EQUINOX =                2000. / equinox                                        RADECSYS= 'FK5     '                                                            TIMESYS = 'TT      '           / Time system                                    TIMEUNIT= 's       '           / Time unit                                      SPECSYS = 'TOPOCENT'           / Wavelengths are as observed                    TIMESDIM= 'T       '           / Time SIDim                                     SPECSDIM= '10-10 L '           / Spectral SIDim                                 FLUXSDIM= 'ML-1T-3 '           / Flux SIDim                                     MJDREF  =              0.0E+00 / MDJ zero point for times                       SPEC_RES=         5.000000E-02 / [Angstrom] Spectral resolution                 FLUX_CAL= 'UNCALIBRATED'       / Flux calibration                               END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Eˆ¬ A	æ×    Eˆ¬fA+Y    Eˆ¬ÍA°    Eˆ­3A¤R    Eˆ­šAÇ°    Eˆ® Aë    Eˆ®fA²´    Eˆ®ÍAÞk    Eˆ¯3A
+!    Eˆ¯šA    Eˆ° A³!    Eˆ°fAM¶    Eˆ°ÍAÇ­    Eˆ±3AÅÁ    Eˆ±šA’    Eˆ² A
+è    Eˆ²fA©M    Eˆ²ÍA·    Eˆ³3AH9    Eˆ³šAÙ]    Eˆ´ AÃå    Eˆ´fAˆ£    Eˆ´ÍAMd    Eˆµ3A2Ô    EˆµšA{    Eˆ¶ Ah    Eˆ¶fAáµ    Eˆ¶ÍA½    Eˆ·3Agô    Eˆ·šAþ>    Eˆ¸ A”    Eˆ¸fAòš    Eˆ¸ÍAnM    Eˆ¹3Aê    Eˆ¹šArG    Eˆº AÕ    EˆºfAN}    EˆºÍAq2    Eˆ»3A“ç    Eˆ»šA¶˜    Eˆ¼ AÙ?    Eˆ¼fAûç    Eˆ¼ÍA‡~    Eˆ½3ARX    Eˆ½šA5    Eˆ¾ AW/    Eˆ¾fA|æ    Eˆ¾ÍAÆ|    Eˆ¿3AýÁ    Eˆ¿šA5
+    EˆÀ A¥    EˆÀfAØÜ    EˆÀÍA8    EˆÁ3A`Í    EˆÁšA8!    EˆÂ Ap    EˆÂfAYi    EˆÂÍAì­    EˆÃ3At§    EˆÃšA½    EˆÄ A€    EˆÄfA¸     EˆÄÍA’0    EˆÅ3Ak½    EˆÅšA8    EˆÆ A[    EˆÆfAÊ®    EˆÆÍA&<    EˆÇ3Ab.    EˆÇšAo    EˆÈ A¢¨    EˆÈfAÖ4    EˆÈÍA•/    EˆÉ3AÃ    EˆÉšA|X    EˆÊ AÕî    EˆÊfA³+    EˆÊÍAf    EˆË3A!
+    EˆËšAÓý    EˆÌ A³    EˆÌfAÉ/    EˆÌÍAxª    EˆÍ3Aêš    EˆÍšA6p    EˆÎ A‚K    EˆÎfAéò    EˆÎÍA     EˆÏ3AV    EˆÏšAän    EˆÐ Atv    EˆÐfA`	    EˆÐÍAY›    EˆÑ3AS1    EˆÑšA8²    EˆÒ AA    EˆÒfAÝÓ    EˆÒÍArh    EˆÓ3Aõ'    EˆÓšAl7    EˆÔ AÂ    EˆÔfAè    EˆÔÍAâP    EˆÕ3Aº™    EˆÕšA’æ    EˆÖ Aè#    EˆÖfAØg    EˆÖÍAÈ«    Eˆ×3A1Ú    Eˆ×šA    EˆØ A¬B    EˆØfAŸÍ    EˆØÍA“Q    EˆÙ3AÊí    EˆÙšA}    EˆÚ A/2    EˆÚfA
+o»    EˆÚÍA
+µ    EˆÛ3A	®    EˆÛšAB     EˆÜ A*    EˆÜfAî†    EˆÜÍAñÅ    EˆÝ3Aõ    EˆÝšA /    EˆÞ A´Â    EˆÞfAiR    EˆÞÍA“i    Eˆß3AgÌ    EˆßšA<2    Eˆà A€y    EˆàfA±†    EˆàÍA,p    Eˆá3Aªe    EˆášA(^    Eˆâ A‚ü    EˆâfA®g    EˆâÍA
+ÙÎ    Eˆã3AŠ    EˆãšA    Eˆä A„U    EˆäfA­    EˆäÍAÖ²    Eˆå3A>÷    EˆåšAß4    Eˆæ Al    EˆæfAè‘    EˆæÍAêý    Eˆç3Aíj    EˆçšA#    Eˆè A(j    EˆèfA]t    EˆèÍAùÂ    Eˆé3A–    EˆéšA¬1    Eˆê Aç@    EˆêfA"N    EˆêÍAO'    Eˆë3Aý<    EˆëšA«V    Eˆì AÈ    EˆìfAÙù    EˆìÍAç©    Eˆí3AæO    EˆíšAä÷    Eˆî ATÎ    EˆîfADe    EˆîÍA4    Eˆï3AÆ¤    EˆïšA90    Eˆð AŸÒ    EˆðfAe³    EˆðÍA+Ž    Eˆñ3A
+¢6    EˆñšA
+ÅÉ    Eˆò A
+é_    EˆòfA°    EˆòÍAó€    Eˆó3A6î    EˆóšAç†    Eˆô A|£    EˆôfAð¶    EˆôÍAn    Eˆõ3AëQ    EˆõšA®    Eˆö AMH    EˆöfAƒë    EˆöÍA>N    Eˆ÷3A>g    Eˆ÷šA>    Eˆø A*    EˆøfA“    EˆøÍA:Í    Eˆù3A-—    EˆùšA c    Eˆú Aa¸    EˆúfAðI    EˆúÍA~à    Eˆû3AqV    EˆûšA
+ñk    Eˆü A	´ö    EˆüfAxc    EˆüÍA;ã    Eˆý3Aæ¢    EˆýšAsw    Eˆþ A M    EˆþfA™E    EˆþÍA‹    Eˆÿ3A
+¡É    EˆÿšA¬    E‰  AÝ    E‰ fA,„    E‰ ÍA4_    E‰3A<>    E‰šA±¡    E‰ A}¥    E‰fAI¥    E‰ÍAa    E‰3Aé£    E‰šAeš    E‰ A'é    E‰fA	ê2    E‰ÍA	*’    E‰3A	ƒ    E‰šA	Û‰    E‰ A	R    E‰fA-õ    E‰ÍA	Ë    E‰3A ‘    E‰šAú    E‰ A     E‰fAˆ    E‰ÍAð,    E‰	3A¢    E‰	šA@    E‰
+ A Š    E‰
+fAV    E‰
+ÍA„-    E‰3A³}    E‰šA-Ø    E‰ A¨1    E‰fAcû    E‰ÍA·    E‰3A
+G    E‰šA !    E‰ @þ¯–    E‰f@ûÕ    E‰Í@öYb    E‰3@ñg¶    E‰š@íÇ    E‰ @ëè    E‰f@ê½I    E‰Í@éÑ    E‰3@æ«í    E‰š@äNû    E‰ @ä£Q    E‰f@åìc    E‰Í@ç%     E‰3@æñ    E‰š@äè½    E‰ @ãÇ(    E‰f@âžF    E‰Í@áu_    E‰3@áZØ    E‰š@áð¾    E‰ @â†«    E‰f@ã£Ø    E‰Í@äÐç    E‰3@æ&9    E‰š@è,    E‰ @ê1ý    E‰f@ëR;    E‰Í@ëv    E‰3@ë™ê    E‰š@ëÎz    E‰ @ì    E‰f@ìX˜    E‰Í@îU    E‰3@ïÊ"    E‰š@ñ'ö    E‰ @ñÞ)    E‰f@ò”d    E‰Í@ôt–    E‰3@öù!    E‰š@ù}Ä    E‰ @ü×å    E‰fA  &    E‰ÍA••    E‰3A:]    E‰šAß+    E‰  Añ¹    E‰ fA€/    E‰ ÍA£    E‰!3A±%    E‰!šAA    E‰" AIÔ    E‰"fAâr    E‰"ÍA{    E‰#3A6‚    E‰#šA$    E‰$ A    E‰$fA”»    E‰$ÍA	+    E‰%3A½¬    E‰%šA2µ    E‰& A	§²    E‰&fA”X    E‰&ÍA˜¶    E‰'3A    E‰'šA
+À    E‰( Ao    E‰(fAÒj    E‰(ÍAz’    E‰)3Aî    E‰)šA×P    E‰* AyB    E‰*fA     E‰*ÍA
+W^    E‰+3A;ï    E‰+šA ‰    E‰, A‘    E‰,fAãà    E‰,ÍA-í    E‰-3A$    E‰-šAA    E‰. AF    E‰.fAÅ®    E‰.ÍAEK    E‰/3A`©    E‰/šAO4    E‰0 A=¿    E‰0fAOó    E‰0ÍAbr    E‰13A{`    E‰1šA£É    E‰2 AÌ4    E‰2fAä    E‰2ÍA­d    E‰33ANÙ    E‰3šAw    E‰4 A
+ðÇ    E‰4fA
+ÏC    E‰4ÍA
+¢}    E‰53A
+u¶    E‰5šA)”    E‰6 Aº¦    E‰6fAKÆ    E‰6ÍA×ß    E‰73A%Ð    E‰7šAw    E‰8 AâE    E‰8fAMƒ    E‰8ÍA‰°    E‰93Aƒî    E‰9šA~-    E‰: AÙÓ    E‰:fAøM    E‰:ÍA     E‰;3A‘Î    E‰;šAš    E‰< A!ñ    E‰<fA™`    E‰<ÍAÊ    E‰=3AFÏ    E‰=šAè    E‰> A‰g    E‰>fA&K    E‰>ÍA¦2    E‰?3A–ë    E‰?šAÒu    E‰@ A     E‰@fAíÈ    E‰@ÍAMn    E‰A3A­!    E‰AšAg—    E‰B A½k    E‰BfA­    E‰BÍA[Ò    E‰C3A
+¥    E‰CšAã    E‰D AÛ4    E‰DfAÓ]    E‰DÍA,*    E‰E3A\Â    E‰EšA¹›    E‰F A€á    E‰FfAH.    E‰FÍAÝ/    E‰G3A,˜    E‰GšA|    E‰H AN"    E‰HfAò    E‰HÍAŒ     E‰I3AFæ    E‰IšA¢    E‰J AÑ_    E‰JfA
+Çg    E‰JÍA	½f    E‰K3A	¡Ø    E‰KšA	ýX    E‰L A
+XÜ    E‰LfAœ    E‰LÍA¿Z    E‰M3AÒ^    E‰MšA[3    E‰N Aä    E‰NfAF    E‰NÍA    E‰O3AØ    E‰OšArÁ    E‰P A*    E‰PfAŸs    E‰PÍA@2    E‰Q3Aàí    E‰QšAÄ0    E‰R AÝl    E‰RfAöª    E‰RÍA 6    E‰S3A8À    E‰SšAõ    E‰T AO—    E‰TfAª+    E‰TÍAÖt    E‰U3AÔŸ    E‰UšAÒÌ    E‰V A]´    E‰VfAÎü    E‰VÍAoq    E‰W3A<
+    E‰WšA¬    E‰X Au“    E‰XfAoV    E‰XÍAi    E‰Y3AÆ    E‰YšAôÆ    E‰Z AT    E‰ZfA“Ù    E‰ZÍAÓ»    E‰[3Aï    E‰[šA²Ž    E‰\ A`!    E‰\fA“    E‰\ÍAU6    E‰]3A    E‰]šAOD    E‰^ Aþ    E‰^fA‡R    E‰^ÍAÎ    E‰_3AG    E‰_šAgô    E‰` AdP    E‰`fAc.    E‰`ÍAüS    E‰a3A•€    E‰ašA²    E‰b AÚÆ    E‰bfA{    E‰bÍAJQ    E‰c3A#Ø    E‰cšAýj    E‰d A™<    E‰dfA0    E‰dÍAF|    E‰e3A{¨    E‰ešA°â    E‰f A5Î    E‰ffA¿^    E‰fÍAHá    E‰g3A=q    E‰gšA
+6Ç    E‰h A	é£    E‰hfAts    E‰hÍAÿU    E‰i3A ˜    E‰išA«    E‰j Aµ¤    E‰jfADU    E‰jÍAÊA    E‰k3AåK    E‰kšA	Ðç    E‰l A¼n    E‰lfA!/    E‰lÍA
+B•    E‰m3Ad    E‰mšAªë    E‰n AÅ±    E‰nfAÄN    E‰nÍAk$    E‰o3Aù    E‰ošA¿    E‰p A0Ü    E‰pfA¢½    E‰pÍA¾C    E‰q3A³æ    E‰qšAÇß    E‰r AA‘    E‰rfA»K    E‰rÍADd    E‰s3A    E‰sšAÛ§    E‰t Ai¸    E‰tfA
+ð    E‰tÍA
+<,    E‰u3ABw    E‰ušAHÜ    E‰v AÃT    E‰vfAüP    E‰vÍA5D    E‰w3A&Š    E‰wšA0    E‰x A;9    E‰xfAL     E‰xÍA]    E‰y3A©ú    E‰yšA(Z    E‰z A¦Á    E‰zfA.    E‰zÍA¶¬    E‰{3AöŠ    E‰{šA-D    E‰| Ac÷    E‰|fAJ½    E‰|ÍAïì    E‰}3A
+•    E‰}šA
+èí    E‰~ Auh    E‰~fAñÕ    E‰~ÍA4á    E‰3Awó    E‰šAÛ{    E‰€ AY    E‰€fAÖÈ    E‰€ÍA!—    E‰3Af)    E‰šAKª    E‰‚ Aí    E‰‚fAŽg    E‰‚ÍA=A    E‰ƒ3A¼¸    E‰ƒšA<8    E‰„ AÂc    E‰„fA-,    E‰„ÍA
+É    E‰…3Ah    E‰…šA9Ã    E‰† A
+•    E‰†fA	Nu    E‰†ÍAÌ    E‰‡3A	U    E‰‡šA
+8    E‰ˆ A    E‰ˆfA
+ÐÀ    E‰ˆÍA
+”e    E‰‰3A
+ð    E‰‰šA³    E‰Š Av9    E‰ŠfA»ƒ    E‰ŠÍA
+æ_    E‰‹3A
+Ø    E‰‹šA	qÔ    E‰Œ AÆÊ    E‰ŒfA	i    E‰ŒÍA
+Ú    E‰3AK9    E‰šA…õ    E‰Ž A¾l    E‰ŽfA2x    E‰ŽÍAÞ    E‰3A‰¢    E‰šA(ë    E‰ AO>    E‰fAu•    E‰ÍA>    E‰‘3AU    E‰‘šAìÉ    E‰’ Aäv    E‰’fAÜ%    E‰’ÍAS    E‰“3A‹•    E‰“šAÆ    E‰” Ad    E‰”fA    E‰”ÍA
+¦~    E‰•3A
+Rn    E‰•šA	þ\    E‰– A;M    E‰–fAî    E‰–ÍAÌ’    E‰—3AÚ    E‰—šAo    E‰˜ A
+ë	    E‰˜fA$ö    E‰˜ÍA^÷    E‰™3Aòª    E‰™šANc    E‰š A{Û    E‰šfAòÔ    E‰šÍAiº    E‰›3A@    E‰›šAÏÞ    E‰œ A_Ê    E‰œfAˆf    E‰œÍA•Ú    E‰3ATu    E‰šA/    E‰ž A
+œ    E‰žfAx    E‰žÍA~c    E‰Ÿ3A„«    E‰ŸšA6Ç    E‰  AØÀ    E‰ fA§    E‰ ÍA3?    E‰¡3A¿u    E‰¡šAóm    E‰¢ AÜ=    E‰¢fAÅ    E‰¢ÍA    E‰£3ACŽ    E‰£šAÇ	    E‰¤ A=Ö    E‰¤fA´¬    E‰¤ÍAë    E‰¥3Aõ—    E‰¥šA     E‰¦ A4Ÿ    E‰¦fAkx    E‰¦ÍA–‹    E‰§3A¦-    E‰§šAµÓ    E‰¨ AØD    E‰¨fA¨    E‰¨ÍA0Ð    E‰©3A=^    E‰©šAIï    E‰ª A!Ÿ    E‰ªfAœM    E‰ªÍAô    E‰«3A”[    E‰«šAÒ    E‰¬ AŸ#    E‰¬fAÛÛ    E‰¬ÍA—    E‰­3Agÿ    E‰­šAÐE    E‰® A8’    E‰®fAoò    E‰®ÍA™ò    E‰¯3A±b    E‰¯šAX     E‰° AÿÙ    E‰°fAw(    E‰°ÍA¾j    E‰±3A¡    E‰±šA/    E‰² A~.    E‰²fA¾›    E‰²ÍAÉr    E‰³3AÔJ    E‰³šA`;    E‰´ AKê    E‰´fA7¨    E‰´ÍA˜‹    E‰µ3Aï‘    E‰µšA´Ô    E‰¶ A¾    E‰¶fA€Ž    E‰¶ÍAq!    E‰·3A3    E‰·šAòÆ    E‰¸ Aó    E‰¸fA-"    E‰¸ÍA³    E‰¹3A‚    E‰¹šAøS    E‰º A/    E‰ºfAªˆ    E‰ºÍAÜ    E‰»3AS    E‰»šAžT    E‰¼ Ahþ    E‰¼fAÈK    E‰¼ÍA'ž    E‰½3Aˆ    E‰½šAí‘    E‰¾ Aé!    E‰¾fA‚    E‰¾ÍA&    E‰¿3A3R    E‰¿šAã    E‰À A’É    E‰ÀfAì–    E‰ÀÍAUÑ    E‰Á3A]    E‰ÁšAjë    E‰Â Ax­    E‰ÂfAé    E‰ÂÍA/    E‰Ã3A>ù    E‰ÃšA¶¯    E‰Ä A.Ž    E‰ÄfA,    E‰ÄÍA¿¬    E‰Å3AS4    E‰ÅšAü    E‰Æ A›    E‰ÆfA¸"    E‰ÆÍA¼¡    E‰Ç3AÁ     E‰ÇšAZú    E‰È A¨Å    E‰ÈfAö¤    E‰ÈÍAV    E‰É3AÛê    E‰ÉšA³    E‰Ê AŒL    E‰ÊfAe…    E‰ÊÍAq    E‰Ë3AEÔ    E‰ËšA~K    E‰Ì A¿    E‰ÌfA‰Ý    E‰ÌÍAà    E‰Í3AÐ±    E‰ÍšAŠm    E‰Î Aª/    E‰ÎfAÑ²    E‰ÎÍAÅÀ    E‰Ï3AÄ    E‰ÏšAe½    E‰Ð AŽ‰    E‰ÐfA†    E‰ÐÍA}j    E‰Ñ3Aº™    E‰ÑšAAÔ    E‰Ò A•V    E‰ÒfA½    E‰ÒÍA|    E‰Ó3A³e    E‰ÓšA„2    E‰Ô AU    E‰ÔfAÇ    E‰ÔÍAV    E‰Õ3A
+6Ë    E‰ÕšAWÐ    E‰Ö Axç    E‰ÖfA‡ß    E‰ÖÍA½    E‰×3AÆ{    E‰×šAg[    E‰Ø AS    E‰ØfAsâ    E‰ØÍAKÔ    E‰Ù3A#³    E‰ÙšAd    E‰Ú Aù    E‰ÚfAl    E‰ÚÍAMÉ    E‰Û3A/    E‰ÛšA5    E‰Ü AW‘    E‰ÜfAz    E‰ÜÍA5    E‰Ý3A®    E‰ÝšA.ã    E‰Þ A¤~    E‰ÞfA>    E‰ÞÍA£*    E‰ß3AçÊ    E‰ßšAWÓ    E‰à AÒQ    E‰àfALÕ    E‰àÍAÉ    E‰á3AG:    E‰ášAÅr    E‰â Ae    E‰âfAÙ    E‰âÍA	    E‰ã3ABþ    E‰ãšA|Ù    E‰ä Ay    E‰äfAàV    E‰äÍA1E    E‰å3A÷    E‰åšA´ˆ    E‰æ A›£    E‰æfAÌˆ    E‰æÍAýn    E‰ç3AÚW    E‰çšAšA    E‰è A€    E‰èfAl    E‰èÍAX)    E‰é3Aø%    E‰éšAX¦    E‰ê A¹    E‰êfAîv    E‰êÍAzF    E‰ë3A‘B    E‰ëšAx–    E‰ì A_å    E‰ìfA”ì    E‰ìÍAo.    E‰í3AQw    E‰íšAÓê    E‰î AVT    E‰îfAUž    E‰îÍA÷à    E‰ï3Aš(    E‰ïšA§    E‰ð AÌœ    E‰ðfA—x    E‰ðÍA¿    E‰ñ3Ayû    E‰ñšAL    E‰ò A`.    E‰òfAtU    E‰òÍAÆÛ    E‰ó3Aˆ    E‰óšA¼    E‰ô Avµ    E‰ôfAØ£    E‰ôÍA8‹    E‰õ3A—È    E‰õšA1â    E‰ö A±    E‰öfA‰    E‰öÍA¿k    E‰÷3ABX    E‰÷šAÅI    E‰ø AŸ7    E‰øfAl    E‰øÍAÁ    E‰ù3Aí    E‰ùšAj¼    E‰ú AÔr    E‰úfA¯R    E‰úÍA§ã    E‰û3A§G    E‰ûšA¦¶    E‰ü A^„    E‰üfAÆ9    E‰üÍA
+-Ö    E‰ý3A
+À    E‰ýšA™u    E‰þ AJÀ    E‰þfA”Ž    E‰þÍAÞ]    E‰ÿ3Aå    E‰ÿšAL    EŠ  A†-    EŠ fA"Œ    EŠ ÍA¾ñ    EŠ3A¸–    EŠšAôv    EŠ A0H    EŠfAœ    EŠÍA
+÷C    EŠ3A
+SŒ    EŠšA*#    EŠ A Â    EŠfAéP    EŠÍAP¿    EŠ3A
+ÂÏ    EŠšA€    EŠ Al2    EŠfAâP    EŠÍA‚£    EŠ3A"ú    EŠšA±·    EŠ A    EŠfA²ø    EŠÍAOP    EŠ	3Aë®    EŠ	šAÍÐ    EŠ
+ AEW    EŠ
+fAÉí    EŠ
+ÍA·    EŠ3A¤1    EŠšA…    EŠ Aº½    EŠfAlð    EŠÍAÃE    EŠ3A	Ô‡    EŠšA§B    EŠ A	ð9    EŠfA9=    EŠÍA¦ä    EŠ3A–ì    EŠšAŒ›    EŠ A    EŠfA›†    EŠÍAÌ.    EŠ3AŽ    EŠšAOÒ    EŠ A¹    EŠfAÚ1    EŠÍA›U    EŠ3AO&    EŠšAñ    EŠ ANB    EŠfAëß    EŠÍAl’    EŠ3A
+Ý¬    EŠšA	N³    EŠ Aõt    EŠfA
+<    EŠÍA%    EŠ3AÌä    EŠšAbµ    EŠ A×»    EŠfAò†    EŠÍAQ    EŠ3A,    EŠšAL»    EŠ ATñ    EŠfA?     EŠÍA*A    EŠ3A:ð    EŠšA‚ü    EŠ AË    EŠfA Ž    EŠÍAXþ    EŠ3AWÖ    EŠšAÐß    EŠ AIà    EŠfASª    EŠÍA/Õ    EŠ3A
+}:    EŠšA;    EŠ  A³V    EŠ fAÍ¦    EŠ ÍA*    EŠ!3AP©    EŠ!šAC¹    EŠ" A:    EŠ"fA=Ù    EŠ"ÍAZ¾    EŠ#3Aw¢    EŠ#šANŠ    EŠ$ A$    EŠ$fA§y    EŠ$ÍAzÙ    EŠ%3AN*    EŠ%šAô9    EŠ& A1ù    EŠ&fAo¹    EŠ&ÍA1    EŠ'3AÇ»    EŠ'šAäŸ    EŠ( A§     EŠ(fAie    EŠ(ÍAf6    EŠ)3A7š    EŠ)šAÍ¡    EŠ* A ö    EŠ*fAt=    EŠ*ÍAÐé    EŠ+3Al    EŠ+šAÄ    EŠ, AŠR    EŠ,fAúØ    EŠ,ÍAP-    EŠ-3AŸ    EŠ-šAîß    EŠ. A­ë    EŠ.fA S    EŠ.ÍA	³^    EŠ/3AwÌ    EŠ/šA<I    EŠ0 A–Ÿ    EŠ0fAh¶    EŠ0ÍA?ê    EŠ13A5›    EŠ1šA+I    EŠ2 AšH    EŠ2fA "    EŠ2ÍA
+¥ñ    EŠ33A	 ·    EŠ3šA›7    EŠ4 Ab‡    EŠ4fA	^ç    EŠ4ÍA
+[M    EŠ53AH    EŠ5šA2V    EŠ6 AŽØ    EŠ6fA%°    EŠ6ÍA	¼y    EŠ73A	‰ƒ    EŠ7šA	÷ü    EŠ8 A
+cª    EŠ8fA
+®    EŠ8ÍA
+ùt    EŠ93A$]    EŠ9šA/A    EŠ: A:#    EŠ:fA
+ŽŒ    EŠ:ÍA	Ó]    EŠ;3A	°F    EŠ;šA
+¯Ç    EŠ< A¯M    EŠ<fAXD    EŠ<ÍAæÖ    EŠ=3A'š    EŠ=šA™    EŠ> A    EŠ>fA
+N¹    EŠ>ÍA	½V    EŠ?3A	/¸    EŠ?šA	Ø    EŠ@ A×ô    EŠ@fAøš    EŠ@ÍA	r[    EŠA3A	ì    EŠAšA	æ…    EŠB A	Ð½    EŠBfA	Õ4    EŠBÍA
+K    EŠC3A
+Qa    EŠCšA	±    EŠD AÃ‰    EŠDfA(ª    EŠDÍA	0k    EŠE3A
+80    EŠEšAÐ•    EŠF AÌ=    EŠFfA¯    EŠFÍAøÅ    EŠG3A
+Br    EŠGšA	_é    EŠH A
+»¸    EŠHfAŒ    EŠHÍAˆž    EŠI3AØð    EŠIšAº    EŠJ A¢A    EŠJfA
+‰Ú    EŠJÍA	Ša    EŠK3A“Í    EŠKšAõª    EŠL A	     EŠLfA
+.Y    EŠLÍA
+‰/    EŠM3A
+a‹    EŠMšA
+BÎ    EŠN AT.    EŠNfAe’    EŠNÍA{h    EŠO3Aj     EŠOšA
+XÎ    EŠP A	C    EŠPfAÐw    EŠPÍAÆC    EŠQ3A
+57    EŠQšA¤/    EŠR AM³    EŠRfA¸>    EŠRÍA«ê    EŠS3A
+ªþ    EŠSšAª    EŠT Až«    EŠTfA	¾ö    EŠTÍA
+ÍØ    EŠU3A
+Ïv    EŠUšA
+Ñ    EŠV A
+¨“    EŠVfA
+UI    EŠVÍA
+ú    EŠW3A;    EŠWšA8q    EŠX AÍÐ    EŠXfAfÃ    EŠXÍAÿ±    EŠY3A
+«è    EŠYšA	    EŠZ A%3    EŠZfAüF    EŠZÍA	ÓZ    EŠ[3A	Öd    EŠ[šA	uW    EŠ\ A	6;    EŠ\fA	ö    EŠ\ÍA
+µÐ    EŠ]3A+     EŠ]šAe    EŠ^ Ažâ    EŠ^fA     EŠ^ÍA
+’y    EŠ_3A
+–@    EŠ_šAM¿    EŠ` A>    EŠ`fAÞ1    EŠ`ÍA»ç    EŠa3AÕ]    EŠašAF    EŠb A
+¶¾    EŠbfA
+S    EŠbÍA	×`    EŠc3A	Žî    EŠcšA	D‡    EŠd Aú    EŠdfA	Nj    EŠdÍA	û    EŠe3A
+K    EŠešA
+ÂY    EŠf A
+çd    EŠffAVä    EŠfÍA	2    EŠg3A»    EŠgšA:ÿ    EŠh A¸ö    EŠhfAÎµ    EŠhÍAQŽ    EŠi3AÔb    EŠišAÙ˜    EŠj A
+ÊK    EŠjfA	ûÉ    EŠjÍA	Àù    EŠk3A	†&    EŠkšA
+îK    EŠl Aá“    EŠlfAZ£    EŠlÍAáN    EŠm3Agô    EŠmšA6&    EŠn A
+ž:    EŠnfA	%     EŠnÍAÞê    EŠo3A˜Ñ    EŠošAu    EŠp AnÍ    EŠpfAh    EŠpÍA¡ü    EŠq3AÜM    EŠqšA	6    EŠr A	5<    EŠrfA	\?    EŠrÍA
+vw    EŠs3A°L    EŠsšA½    EŠt A
+­$    EŠtfA	N‡    EŠtÍA	vP    EŠu3A
+	    EŠušA
+J    EŠv A	‚_    EŠvfAº¬    EŠvÍAi…    EŠw3AN]    EŠwšA_±    EŠx A	„ü    EŠxfA
+ªG    EŠxÍAÔ    EŠy3Aº    EŠyšAAü    EŠz A£Ï    EŠzfAŸ    EŠzÍA†P    EŠ{3A&8    EŠ{šAÆ    EŠ| AêZ    EŠ|fAc    EŠ|ÍA…”    EŠ}3A[5    EŠ}šA0Ô    EŠ~ AÊ/    EŠ~fA‡    EŠ~ÍA
+²?    EŠ3A
+O–    EŠšA	ìê    EŠ€ A}F    EŠ€fA¡‰    EŠ€ÍAÇo    EŠ3AŽ¾    EŠšA
+V
+    EŠ‚ A
+oÜ    EŠ‚fA›    EŠ‚ÍA    EŠƒ3AŸ    EŠƒšA¡    EŠ„ A!H    EŠ„fAK	    EŠ„ÍA
+‘d    EŠ…3A¦ç    EŠ…šA¼i    EŠ† AåÜ    EŠ†fA2Ó    EŠ†ÍAÈ    EŠ‡3A-     EŠ‡šAâö    EŠˆ AŒÙ    EŠˆfA'N    EŠˆÍAÁÁ    EŠ‰3ARŒ    EŠ‰šA§G    EŠŠ A
+æÞ    EŠŠfAÌ=    EŠŠÍA±š    EŠ‹3AÎ    EŠ‹šA¾A    EŠŒ AaŸ    EŠŒfA@’    EŠŒÍA
+ƒ    EŠ3AÙã    EŠšA‡£    EŠŽ A„ù    EŠŽfA´I    EŠŽÍAã˜    EŠ3Aœï    EŠšAšM    EŠ A	¥\    EŠfA	    EŠÍAl¾    EŠ‘3Aäù    EŠ‘šA¿     EŠ’ A—Ê    EŠ’fAZw    EŠ’ÍA#    EŠ“3A•h    EŠ“šA
+Ë`    EŠ” A
+X    EŠ”fAAï    EŠ”ÍA…B    EŠ•3Aˆ    EŠ•šAr    EŠ– A	 Þ    EŠ–fA	¥u    EŠ–ÍA	Ç    EŠ—3A	Êo    EŠ—šA	ŸŽ    EŠ˜ A	t­    EŠ˜fA
+/Ð    EŠ˜ÍA0    EŠ™3AiO    EŠ™šA
+·Ü    EŠš A
+i    EŠšfAºk    EŠšÍAH'    EŠ›3A?    EŠ›šAP·    EŠœ Ab`    EŠœfA€é    EŠœÍAýW    EŠ3A	ÜÀ    EŠšAs¸    EŠž A
+°    EŠžfAø    EŠžÍAô    EŠŸ3A    EŠŸšA    EŠ  A-    EŠ fA†˜    EŠ ÍA>†    EŠ¡3Aë8    EŠ¡šA1ø    EŠ¢ Ax¸    EŠ¢fAÞã    EŠ¢ÍA\…    EŠ£3AÒ¹    EŠ£šA®û    EŠ¤ A‹>    EŠ¤fAÙ\    EŠ¤ÍAz    EŠ¥3AG™    EŠ¥šA¸    EŠ¦ A(!    EŠ¦fAã    EŠ¦ÍA5V    EŠ§3AgË    EŠ§šA–    EŠ¨ AÆ—    EŠ¨fAR×    EŠ¨ÍA r    EŠ©3Aî    EŠ©šA Ñ    EŠª Aõ    EŠªfA°ò    EŠªÍA
+Pã    EŠ«3AðÖ    EŠ«šAn›    EŠ¬ A
+ŽÜ    EŠ¬fA
+CÇ    EŠ¬ÍA#¯    EŠ­3Aš    EŠ­šA$È    EŠ® Az    EŠ®fAÞç    EŠ®ÍA0¯    EŠ¯3A
+‚x    EŠ¯šA
+Èg    EŠ° AWG    EŠ°fAÙ)    EŠ°ÍA4"    EŠ±3A    EŠ±šA³_    EŠ² A
+e_    EŠ²fA	šý    EŠ²ÍA
+¸Q    EŠ³3AÕ©    EŠ³šA÷S    EŠ´ Aª7    EŠ´fAwÚ    EŠ´ÍAÂ    EŠµ3A/    EŠµšAÈõ    EŠ¶ A<Ê    EŠ¶fA
+¸ú    EŠ¶ÍA
+g7    EŠ·3A
+v    EŠ·šA
+ëà    EŠ¸ Ar~    EŠ¸fAÆ     EŠ¸ÍAƒ     EŠ¹3A@!    EŠ¹šAÞ    EŠº AÂ    EŠºfAôø    EŠºÍA	    EŠ»3AE    EŠ»šA
+    EŠ¼ A¾í    EŠ¼fAz    EŠ¼ÍA¶    EŠ½3A·X    EŠ½šA	Ø    EŠ¾ Ahh    EŠ¾fAå¾    EŠ¾ÍAôX    EŠ¿3Aò    EŠ¿šA;Ñ    EŠÀ A‹i    EŠÀfAÙ€    EŠÀÍAÈ    EŠÁ3AR    EŠÁšA¸)    EŠÂ ACZ    EŠÂfA
+Î‰    EŠÂÍA
+–    EŠÃ3A
+b·    EŠÃšA
+â    EŠÄ A	¿x    EŠÄfA	c    EŠÄÍA	l    EŠÅ3A	xÅ    EŠÅšA	âÄ    EŠÆ A
+¼    EŠÆfA•O    EŠÆÍA
+áÒ    EŠÇ3A
+r    EŠÇšA	¿x    EŠÈ A	õ›    EŠÈfA
++À    EŠÈÍA	è“    EŠÉ3A	œ¢    EŠÉšA	ë›    EŠÊ A}    EŠÊfA+c    EŠÊÍAòð    EŠË3Aœ]    EŠËšAä$    EŠÌ AH    EŠÌfA4p    EŠÌÍAŸ    EŠÍ3AÜå    EŠÍšAñÿ    EŠÎ A
+Ë     EŠÎfA	¤     EŠÎÍA§A    EŠÏ3Aò    EŠÏšA¶    EŠÐ AN    EŠÐfAå    EŠÐÍA¦    EŠÑ3AO7    EŠÑšA·    EŠÒ Aô     EŠÒfAÙŒ    EŠÒÍAË     EŠÓ3A¿^    EŠÓšA“÷    EŠÔ A7    EŠÔfA
+Ú>    EŠÔÍA
+}Ù    EŠÕ3A
+!ƒ    EŠÕšA
+;    EŠÖ Aú    EŠÖfAæõ    EŠÖÍAé     EŠ×3AÏ®    EŠ×šAz'    EŠØ A
+Ä±    EŠØfA
+:    EŠØÍAe    EŠÙ3A69    EŠÙšAÄ“    EŠÚ A~    EŠÚfA8l    EŠÚÍA÷    EŠÛ3A
+õµ    EŠÛšA
+äe    EŠÜ A
+Ñu    EŠÜfA
+¾…    EŠÜÍA
+¸“    EŠÝ3A
+´'    EŠÝšA
+r    EŠÞ A	Ó     EŠÞfA	3ñ    EŠÞÍA
+q™    EŠß3Aâ†    EŠßšA—    EŠà A¾_    EŠàfAu*    EŠàÍAb‘    EŠá3A$4    EŠášA
+Æe    EŠâ A	<Þ    EŠâfA³R    EŠâÍAaž    EŠã3A	>E    EŠãšA	ÜØ    EŠä A
+)‰    EŠäfA
+v;    EŠäÍA	ä    EŠå3A	CE    EŠåšA	T    EŠæ A
+A`    EŠæfA.ª    EŠæÍA    EŠç3A
+è­    EŠçšA
+´c    EŠè A
+sh    EŠèfA
+2m    EŠèÍA	Ï—    EŠé3A	kÌ    EŠéšA	Ý    EŠê AÞ*    EŠêfA¡w    EŠêÍA	{    EŠë3A
+¯    EŠëšAE†    EŠì Aá    EŠìfAz    EŠìÍA$]    EŠí3AÎ¥    EŠíšA¡Ò    EŠî A™´    EŠîfA…H    EŠîÍA
+Dý    EŠï3A	®    EŠïšA	E    EŠð A
+R    EŠðfAv    EŠðÍA×1    EŠñ3A«ï    EŠñšA`d    EŠò AC÷    EŠòfA
+2¥    EŠòÍA	Œ    EŠó3Aåh    EŠóšA¿Ø    EŠô Aìü    EŠôfA	1¾    EŠôÍA
+À    EŠõ3AÅ    EŠõšAˆH    EŠö AÐÛ    EŠöfAô«    EŠöÍAT9    EŠ÷3A
+³Ä    EŠ÷šA
+É+    EŠø A6,    EŠøfA8è    EŠøÍA	~    EŠù3AÃ/    EŠùšAË    EŠú AŠ;    EŠúfA	NÒ    EŠúÍA
+%g    EŠû3A
+ûÿ    EŠûšA«V    EŠü AMƒ    EŠüfAÄ,    EŠüÍAÄJ    EŠý3AÄg    EŠýšA²3    EŠþ A
+Vˆ    EŠþfA	Æ    EŠþÍA
+úÒ    EŠÿ3A/’    EŠÿšA
+ü‡    E‹  A	L3    E‹ fA­w    E‹ ÍA
+™    E‹3A[¿    E‹šAçƒ    E‹ AVI    E‹fAGW    E‹ÍAzV    E‹3A
+­Q    E‹šA
+[•    E‹ A
+T    E‹fA
+wC    E‹ÍA­þ    E‹3Aä»    E‹šAæ    E‹ A
+Öï    E‹fA
+‚õ    E‹ÍA
+îd    E‹3AMø    E‹šA	z„    E‹ A§    E‹fAüO    E‹ÍAG©    E‹	3A™×    E‹	šABG    E‹
+ Aê¸    E‹
+fA	«    E‹
+ÍA×Å    E‹3A´    E‹šA	Œ    E‹ A	e    E‹fA
+¹P    E‹ÍA‘‘    E‹3AÌ    E‹šAO8    E‹ A
+Ò[    E‹fA	(ò    E‹ÍAm±    E‹3A€W    E‹šA@    E‹ A	¢-    E‹fA	Þ2    E‹ÍA	¶Ë    E‹3A
+Ö    E‹šAž¬    E‹ A)…    E‹fAS“    E‹ÍA€    E‹3A	þª    E‹šA	m¢    E‹ AÜ˜    E‹fA	W    E‹ÍA	`!    E‹3A	a±    E‹šA	 ø    E‹ A =    E‹fA	´É    E‹ÍA
+Ö    E‹3A<D    E‹šA
+è    E‹ A
+šT    E‹fA
+üŠ    E‹ÍA^Á    E‹3A
+Ë×    E‹šA	€d    E‹ Ap‡    E‹fA	Vç    E‹ÍA
+=H    E‹3A	Ô¡    E‹šA±G    E‹ A¼0    E‹fA›Ÿ    E‹ÍA{    E‹3A×    E‹šAd•    E‹ A	&    E‹fA	Øæ    E‹ÍA
+­¦    E‹3A
+ Ó    E‹šA
+X±    E‹  A
+VÒ    E‹ fA
+ã@    E‹ ÍAo®    E‹!3AÈu    E‹!šA€    E‹" AˆN    E‹"fA	±    E‹"ÍAÙÄ    E‹#3A	Ž²    E‹#šAsx    E‹$ AÛP    E‹$fA
+·õ    E‹$ÍA	–J    E‹%3A§ó    E‹%šA¹˜    E‹& Am—    E‹&fA
+Wì    E‹&ÍAÿ”    E‹'3A­ã    E‹'šA\/    E‹( A
+w    E‹(fA	E·    E‹(ÍA{W    E‹)3A	E     E‹)šA
+¨    E‹* A
+WÖ    E‹*fA
+u„    E‹*ÍA
+€    E‹+3A
+[û    E‹+šA
+7ï    E‹, A	Áa    E‹,fA	:¹    E‹,ÍAÔE    E‹-3A¡×    E‹-šAof    E‹. Aûœ    E‹.fA	–|    E‹.ÍA
+qú    E‹/3A”Ó    E‹/šA¨¹    E‹0 A2î    E‹0fA	½    E‹0ÍA	 ü    E‹13A
+‰_    E‹1šAJ›    E‹2 A
+è¸    E‹2fA
+†Ó    E‹2ÍA»C    E‹33A9Ù    E‹3šAc[    E‹4 A¼    E‹4fA¤    E‹4ÍA
+–Á    E‹53A%}    E‹5šAÉÜ    E‹6 AÄg    E‹6fA¾ñ    E‹6ÍA
+|    E‹73AV½    E‹7šA¼÷    E‹8 A¬    E‹8fA	‚]    E‹8ÍA	n½    E‹93A	f«    E‹9šA	ù†    E‹: A    E‹:fA¯    E‹:ÍAo_    E‹;3A
+É    E‹;šA
+-í    E‹< A	™Y    E‹<fA	HÂ    E‹<ÍA
+#õ    E‹=3A
+ÿ'    E‹=šA¶ƒ    E‹> A»h    E‹>fAØà    E‹>ÍAÌ²    E‹?3AÀ‚    E‹?šA®i    E‹@ A	nH    E‹@fAû¸    E‹@ÍA*1    E‹A3AX§    E‹AšA~d    E‹B A†Ï    E‹BfA
+qÏ    E‹BÍA	AÂ    E‹C3AGï    E‹CšA	Çg    E‹D AFÝ    E‹DfAG'    E‹DÍA
+m^    E‹E3A	ƒ–    E‹EšAXS    E‹F A-    E‹FfAÉ;    E‹FÍAø—    E‹G3A	¶¼    E‹GšA	–    E‹H A	Hn    E‹HfA—é    E‹HÍAÖD    E‹I3A~    E‹IšA)b    E‹J AÅC    E‹JfAç¶    E‹JÍA
+	    E‹K3A	W    E‹KšA²5    E‹L A9u    E‹LfAÄý    E‹LÍAP…    E‹M3A:€    E‹MšA8…    E‹N A	öz    E‹NfA
+õ?    E‹NÍAô    E‹O3ASE    E‹OšAŽd    E‹P A'7    E‹PfA
+·h    E‹PÍA	G˜    E‹Q3A(Q    E‹QšA­    E‹R Aqs    E‹RfA	Bƒ    E‹RÍA    E‹S3AÉ    E‹SšAƒ    E‹T AQÝ    E‹TfA{    E‹TÍA
+U¼    E‹U3A
+žó    E‹UšA
+è*    E‹V AZb    E‹VfAØ"    E‹VÍA1Î    E‹W3AH7    E‹WšA^     E‹X AÑŠ    E‹XfAL°    E‹XÍAvv    E‹Y3A
+>2    E‹YšA.¨    E‹Z A²|    E‹ZfA	6O    E‹ZÍA	ûè    E‹[3A
+èO    E‹[šAŒÌ    E‹\ A    E‹\fA
+—P    E‹\ÍA
+Ö§    E‹]3ALï    E‹]šAE"    E‹^ A
+MZ    E‹^fA	U’    E‹^ÍA	Gþ    E‹_3A	Oƒ    E‹_šAÂs    E‹` A›:    E‹`fA3    E‹`ÍAñê    E‹a3A	F     E‹ašA	c,    E‹b AÏ™    E‹bfAS    E‹bÍA+	    E‹c3Aÿ    E‹cšA6·    E‹d A>Æ    E‹dfA´    E‹dÍAæj    E‹e3AÈ    E‹ešA×    E‹f A	­h    E‹ffA	ÿ1    E‹fÍAê_    E‹g3A    E‹gšA	°X    E‹h AH-    E‹hfA
+o›    E‹hÍAkç    E‹i3A1`    E‹išABÊ    E‹j A	T3    E‹jfA	†'    E‹jÍA	‹º    E‹k3A	ªu    E‹kšA	ìÁ    E‹l A
+/    E‹lfA
+2b    E‹lÍA
+5b    E‹m3A	ü,    E‹mšA	–˜    E‹n A	
+í    E‹nfA³(    E‹nÍA[e    E‹o3A¶a    E‹ošAª¢    E‹p A½¶    E‹pfAö˜    E‹pÍA/|    E‹q3AN¶    E‹qšA è    E‹r AV1    E‹rfAs    E‹rÍA…    E‹s3A™    E‹sšA”!    E‹t A[å    E‹tfA¿ñ    E‹tÍAÚG    E‹u3A@    E‹ušAD<    E‹v AW“    E‹vfA7    E‹vÍA	µ²    E‹w3A	D    E‹wšAÑþ    E‹x AÆ˜    E‹xfA»5    E‹xÍA1>    E‹y3A;    E‹yšAþ    E‹z AÊ    E‹zfA–    E‹zÍAßÇ    E‹{3AÉ    E‹{šAÔæ    E‹| A"    E‹|fA]^    E‹|ÍAf¿    E‹}3A{‚    E‹}šAÄo    E‹~ A:•    E‹~fA™[    E‹~ÍAV    E‹3AÃ    E‹šAG,    E‹€ A©    E‹€fA{    E‹€ÍAD´    E‹3A‡ì    E‹šA	Ã{    E‹‚ A    E‹‚fA
+ý    E‹‚ÍA	fx    E‹ƒ3Aò    E‹ƒšAãø    E‹„ AÕä    E‹„fAP>    E‹„ÍA’í    E‹…3A„Ü    E‹…šA@l    E‹† A	ûû    E‹†fA¹ä    E‹†ÍAn    E‹‡3A\é    E‹‡šAÞÖ    E‹ˆ Ao¨    E‹ˆfAÚå    E‹ˆÍA
+F     E‹‰3A	Ö-    E‹‰šAr    E‹Š AAû    E‹ŠfA§g    E‹ŠÍAÔ    E‹‹3A»T    E‹‹šAJÿ    E‹Œ Aït    E‹ŒfAp    E‹ŒÍA
+"    E‹3A
+Ò    E‹šA    E‹Ž A
+-N    E‹ŽfA &    E‹ŽÍA†g    E‹3AÂT    E‹šAþ@    E‹ A'    E‹fA j    E‹ÍA    E‹‘3AÔ    E‹‘šAª€    E‹’ A    E‹’fAw¹    E‹’ÍA*X    E‹“3A‰ˆ    E‹“šA iŒ    E‹” A ¯¿                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

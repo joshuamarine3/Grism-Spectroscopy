@@ -1,0 +1,223 @@
+SIMPLE  =                    T / Fits standard                                  BITPIX  =                  -32 / Bits per pixel                                 NAXIS   =                    0 / number of data axes                            EXTEND  =                    F / File may contain extensions                    ORIGIN  = 'OHP     '           / ORIGIN                                         COMMENT         The ELODIE archive (OHP)                                        IRAF-TLM= '18:38:37 (18/04/2007)' / Time of last modification                   CRVAL1  =             4743.243                                                  CDELT1  =            0.0498863 / Added for BeSS                                 CD1_1   =            0.0498863                                                  CRPIX1  =                   1.                                                  DC-FLAG =                    0                                                  COMMENT   FITS (Flexible Image Transport System) format is defined in 'AstronomyCOMMENT   and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H LHCUTS1 =       0.00000000E+00 / LHCUTS                                         LHCUTS2 =       0.00000000E+00 / LHCUTS                                         LHCUTS3 =       0.00000000E+00 / LHCUTS                                         LHCUTS4 =       0.00000000E+00 / LHCUTS                                         VERSION = '1.3     '           / TACOS_VERSION                                  LASTCOMP= 'tacos_SunOS_5.4 - Thu Mar 7 14:46:32 WET 1996' / TACOS_LASTCOMP      INSTRUME= 'ELODIE  '           / INSTRUME                                       CUMUL   =       1.00000000E+00 / O_CUMUL                                        DATETU  = '20020328'           / O_DATETU                                       HDEBUT  =       2.01316738E+01 / O_HDEBUT                                       HFIN    =       2.02705784E+01 / O_HFIN                                         EXPTIME =           500.589996 / Added for BeSS                                 TIME1   =       2.00200000E+03 / O_TIME                                         TIME2   =       3.00000000E+00 / O_TIME                                         TIME3   =       2.80000000E+01 / O_TIME                                         TIME4   =       2.02012005E+01 / O_TIME                                         TIME5   =       5.00589996E+02 / O_TIME                                         CCDGAIN =       2.65000010E+00 / ELODIE_CCDGAIN                                 NUMGAIN =       3.00000000E+00 / ELODIE_NUMGAIN                                 NUMCCD  = '1       '           / ELODIE_NUMCCD                                  NUMCORRE= '3       '           / ELODIE_NUMCORRE                                POSCORRE= '338     '           / ELODIE_POSCORRE                                CCDTEMP = '-89.99  '           / ELODIE_CCDTEMP                                 CCDPOWER= '77.50   '           / ELODIE_CCDPOWER                                PRESSION= 'INCONNUE'           / ELODIE_PRESSION                                HUMID   = 'INCONNUE'           / ELODIE_HUMID                                   MAP     = '1895    '           / ELODIE_MAP                                     OBSERVER= 'catala,ELODIE archive,cneiner,BdeBatz' / Added for BeSS              NONUIT  =       1.80000000E+01 / NONUIT                                         POS1    =       7.45472479E+00 / TEL_POS                                        POS2    =       8.28944397E+00 / TEL_POS                                        NOOBJET1=                    1 / CAT_NOOBJET                                    NOOBJET2=                    0 / CAT_NOOBJET                                    NOOBJET3=                58715 / CAT_NOOBJET                                    NOOBJET4=                    0 / CAT_NOOBJET                                    REFNOCOD= '*       '           / CAT_REFNOCODE                                  COMMENT  coordinates below may be at equinox 1950                               ALPHA   = '07:27:09.03'        / CAT_ALPHA                                      DELTA   = '+08:17:21.50'       / CAT_DELTA                                      PROPERM1=       0.00000000E+00 / CAT_PROPERMVT                                  PROPERM2=       0.00000000E+00 / CAT_PROPERMVT                                  NOPROG  =                  227 / CAT_NOPROG                                     COMMENT = '*       '           / COMMENT                                        IMATYP  = 'OBJ2d/S2D/CAL'      / TACOS_IMATYP                                   IMALOC  = 'n20020328/s2d/loco0003' / TACOS_IMALOC                               NORDER  =       6.70000000E+01 / TACOS_NORDER                                   CTRSET29=       4.53052399E+02 / TACOS_CTRSET                                   DISSET29=       1.87969065E+00 / TACOS_DISSET                                   XLIMD29 =       1.02400000E+03 / TACOS_XLIMD                                    XLIMG29 =       1.00000000E+00 / TACOS_XLIMG                                    YLIMD29 =       4.35139435E+02 / TACOS_YLIMD                                    YLIMG29 =       4.31755188E+02 / TACOS_YLIMG                                    DECLOC  =       0.00000000E+00 / TACOS_DECLOC                                   DEGLOC1 =       4.00000000E+00 / TACOS_DEGLOC                                   DEGLOC2 =       2.50000000E+01 / TACOS_DEGLOC                                   DEGSIG1 =       3.00000000E+00 / TACOS_DEGSIG                                   DEGSIG2 =       4.00000000E+00 / TACOS_DEGSIG                                   COESIG1 =       3.62763071E+00 / TACOS_COESIG                                   COESIG2 =      -1.09859936E-01 / TACOS_COESIG                                   COESIG3 =       2.07840428E-02 / TACOS_COESIG                                   COESIG4 =       6.19259803E-03 / TACOS_COESIG                                   COESIG5 =       4.00123466E-03 / TACOS_COESIG                                   COESIG6 =       7.98214376E-02 / TACOS_COESIG                                   COESIG7 =       1.80650910E-03 / TACOS_COESIG                                   COESIG8 =      -3.56702320E-03 / TACOS_COESIG                                   COESIG9 =       2.95598060E-03 / TACOS_COESIG                                   COESIG10=       1.69101008E-03 / TACOS_COESIG                                   COESIG11=       5.68461642E-02 / TACOS_COESIG                                   COESIG12=      -6.52517658E-03 / TACOS_COESIG                                   COESIG13=      -1.50214051E-04 / TACOS_COESIG                                   COESIG14=       1.75893493E-03 / TACOS_COESIG                                   COESIG15=       2.44466425E-03 / TACOS_COESIG                                   COESIG16=       3.79604264E-03 / TACOS_COESIG                                   COESIG17=       1.98511593E-03 / TACOS_COESIG                                   COESIG18=      -4.04585665E-03 / TACOS_COESIG                                   COESIG19=      -4.44395933E-04 / TACOS_COESIG                                   COESIG20=      -2.83625443E-03 / TACOS_COESIG                                   OLIMLS  =       1.00000000E+00 / TACOS_OLIMLS                                   EXTSTR  =       3.00000000E+00 / TACOS_EXTSTR                                   JDB1    =       2.45236200E+06 / TACOS_JDB                                      JDB2    =       3.43065739E-01 / TACOS_JDB                                      BERV    =      -2.81184711E+01 / TACOS_BERV                                     BERVMX  =       3.11223450E+01 / TACOS_BERVMX                                   DELCAL  =       0.00000000E+00 / TACOS_DELCAL                                   LLCMOY  =       0.00000000E+00 / TACOS_LLCMOY                                   LLCSIG  =       0.00000000E+00 / TACOS_LLCSIG                                   IMACAL  = 'n20020328/llo0015'  / TACOS_IMACAL                                   LLCNRA  =       1.01500000E+03 / TACOS_LLCNRA                                   FILERC  = '/d1/gva/dqsrc/elodie/elodiehp' / TACOS_FILERC                        PROXIM  =       2.50000000E-01 / TACOS_PROXIM                                   FILENAME= 'elodie:20020328/0018' / Original filename                            CREATOR = 'Pleinpot     1'     / Written by Pleinpot (Hypercat)                 DATE-OBS= '2002-03-28T20:07:54.02680' / Added for BeSS                          MJD-OBS =         52361.841717 / [d] Modified JD when observ. start             AIRMASS =            1.3298794 / Airmass                                        H_AXIS1 =                    2 / Wavelength                                     H_AXIS2 =                    3 / Order (echelle)                                CTYPE1  = 'Wavelength        ' / Added for BeSS                                 H_DRON  =                   0. / [e-] Detector read out noise                   H_DGAIN =                   1. / [e-/ADU] Detector gain                         H_CONTXT= 'ECH     '           / Extracted echelle spectrum                     H_STATUS=                    0 / No error on pipeline                           COMMENT  Note: The telescope position (POS1,POS2) and the catalogue information COMMENT (NOOBETn)                                                               COMMENT     may not be accurate. Please use instead the designation from keywordCOMMENT  (OBJECT)                                                               H_AFR000= 'elodie:20020328/0018' / Archive identifier of current frame          H_TYPE  =                    1 / Science object                                 OBJECT  = 'HD058715'           / Object standard designation                    SN      =                433.4 / S/N-per-pixel of original spectrum at 550 nm   DIVUL   =                    0 / data fully public                              BSS_ORD = 'OHP_20020328_0018n' / Added for BeSS                                 BSS_NORM= 'no correction     ' / Added for BeSS                                 CUNIT1  = 'Angstrom          ' / Added for BeSS                                 BSS_SITE= 'OHP               ' / Added for BeSS                                 BSS_TELL= 'no correction     ' / Added for BeSS                                 BSS_COSM= 'no correction     ' / Added for BeSS                                 BSS_INST= 'Elodie@OHP193     ' / Added for BeSS                                 RADECSYS= 'FK5               ' / Added for BeSS                                 BSS_VHEL=             0.000000 / Added for BeSS                                 OBJNAME = 'HD 58715          ' / Added for BeSS                                 COMMENT   The original data from the ELODIE archive have been resampled         COMMENT   for BeSS using the IRAF package sinterp with interp=curve             COMMENT  following keywords added by BeSS                                       RA      =           111.787678 / Right ascension of the star (decimal degrees)  DEC     =             8.289316 / Declinaison of the star (decimal degrees)      BSS_NAME= 'bet CMi           ' / Name of the star as recorded in  BeSS          TELESCOP= 'OHP193            ' / Name of the telescope                          DETNAM  = 'CCD TK1024M       ' / Name of the detector                           BSS_LONG=             5.712222 / Longitude of the site as recorded in BeSS      BSS_LAT =            43.931667 / Latitude of the site as recorded in BeSS       BSS_ELEV=           650.000000 / Elevation of the site as recorded in BeSS      DATE-END= '2002-03-28T20:16:14.6168187261' / date+time at exposure end          MID-HJD = 2452362.343098353586 / Heliocentric Julian Date at mid-exposure       BSS_RQVH=            28.117100 / Required heliocentric velocity correction      COMMENT   BSS_VHEL shows the applied correction in km/s. If BSS_VHEL=0,         COMMENT   no correction has been applied. The required correction given         COMMENT   in BSS_RQVH (in km/s) is an escape velocity (redshift). To apply      COMMENT   it within Iraf, the keyword redshift must be set to -BSS_RQVH         COMMENT   and isvelocity must be set to "yes" in the dopcor task.               EQUINOX =          2000.000000 / Equinox                                        BSS_ITRP=               45000.                                                  END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional binary table                     NAXIS1  =                   12 / width of table in bytes                        NAXIS2  =                 1024 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group (required keyword)              TFIELDS =                    3 / number of fields in each row                   TTYPE1  = 'WAVE    '           / label for field   1                            TFORM1  = '1E      '           / data format of field: 4-byte REAL              TUNIT1  = 'Angstrom'           / physical unit of field                         TTYPE2  = 'FLUX    '           / label for field   2                            TFORM2  = '1E      '           / data format of field: 4-byte REAL              TUNIT2  = 'UNKNOWN '           / physical unit of field                         TTYPE3  = 'ERROR   '           / label for field   3                            TFORM3  = '1E      '           / data format of field: 4-byte REAL              TUNIT3  = 'UNKNOWN '           / physical unit of field                         EXTNAME = 'SPECTRUM'           / name of this binary table extension            VOCLASS = 'Spectrum 1.00'      / VO Data Model                                  VOCREATE= 'Be Stars Spectra Database' / VO Creator                              DATE    = '2002-03-28T20:07:54.02680' / Creation date and time                  BANDPASS= '        '           / SED Banpass                                    SPECBAND= 'Optical '           / DataID Banpass                                 OBJECT  = 'bet CMi           ' / Source name                                    VOPUB   = 'ivo://obspm.fr'     / VO Publisher authority                         VOLOGO  = 'http://basebe.obspm.fr/basebe/Images/LogoBeSS.jpg' / VO Creator logo FLUX_UCD= 'phot.fluxDens;em.wl'                                                 EQUINOX =                2000. / equinox                                        RADECSYS= 'FK5     '                                                            TIMESYS = 'TT      '           / Time system                                    TIMEUNIT= 's       '           / Time unit                                      SPECSYS = 'TOPOCENT'           / Wavelengths are as observed                    TIMESDIM= 'T       '           / Time SIDim                                     SPECSDIM= '10-10 L '           / Spectral SIDim                                 FLUXSDIM= 'ML-1T-3 '           / Flux SIDim                                     MJDREF  =              0.0E+00 / MDJ zero point for times                       SPEC_RES=         4.988630E-02 / [Angstrom] Spectral resolution                 FLUX_CAL= 'UNCALIBRATED'       / Flux calibration                               END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Eî9ÚIÊ    Eî:XIZË    Eî:æI
+    Eî;$I9ü    Eî;äIU    Eî;I5l    Eî<WI
+>    Eî<ΩIJq    Eî=#IP”    Eî=âI‹f    Eî=ÔI(≠    Eî>VILΩ    Eî>ºI˛H    Eî?"IXo    Eî?àI6O    Eî?ÓIå*    Eî@TI6‘    Eî@ªIõû    EîA!I~f    EîAáI@ç    EîAÌICı    EîBSI7ù    EîBπI_í    EîC I˛ˆ    EîCÜI◊S    EîCÏIƒ    EîDRIhc    EîD∏IÌ_    EîEIm≈    EîEÖIú    EîEÎIÇ    EîFQIÄ    EîF∑IÌ°    EîGIP    EîGÉIÕ5    EîGÍIØ    EîHPI}    EîH∂IOª    EîII_    EîIÇI     EîIËIú›    EîJOI…    EîJµI∞·    EîKIkè    EîKÅIÁ±    EîKÁI˜    EîLMI¨Ë    EîL¥IÆª    EîMI*u    EîMÄIVÔ    EîMÊIM)    EîNLI9d    EîN≤I·;    EîOI#æ    EîOIµ    EîOÂI‰ç    EîPKI¬¢    EîP±IÑ    EîQIY    EîQ~I;    EîQ‰I4¢    EîRJI.C    EîR∞IO+    EîSIµY    EîS|IÉà    EîS„I    EîTIIiÉ    EîTØIÃñ    EîUIN˝    EîU{Iü    EîU·II◊    EîVHICP    EîVÆI≠à    EîWIÙÎ    EîWzIÁ'    EîW‡Iì»    EîXFIö    EîX≠Iï4    EîYIkq    EîYyIéç    EîYﬂI{?    EîZEIÚ’    EîZ´IE˙    Eî[IÜ?    Eî[xIÕ    Eî[ﬁI¡}    Eî\DI∏
+    Eî\™IRê    Eî]IS    Eî]wI+˝    Eî]›Im,    Eî^CIÛÅ    Eî^©Iﬂ\    Eî_I8ë    Eî_uI2Q    Eî_‹Iƒ‘    Eî`BI>…    Eî`®IKõ    EîaI≤    EîatIª    Eîa⁄IEV    EîbAI´z    EîbßI¥ˆ    EîcIPó    EîcsIà    EîcŸIñπ    Eîd?Ià    Eîd¶IZ[    EîeIáﬂ    EîerI7K    EîeÿIü    Eîf>IK—    Eîf§I8B    EîgIiñ    EîgqI¸∫    Eîg◊IïÓ    Eîh=Ié@    Eîh£Igu    Eîi	I 8    EîipIiπ    Eîi÷Iêâ    Eîj<I$t    Eîj¢I®±    EîkISΩ    EîknIÄ.    Eîk’Ivê    Eîl;IE}    Eîl°IC}    EîmIœ˘    EîmmIY3    Eîm”I    Eîn:I˝Û    Eîn†I8c    EîoIªû    EîolI\®    Eîo“IŸ¯    Eîp8Ib    EîpüI°ö    EîqIr9    EîqkIã    Eîq—IL¿    Eîr7ILÁ    EîrùIõk    EîsI‹ˆ    EîsjIÛ⁄    Eîs–IO    Eît6I’{    EîtúI:+    EîuIjJ    EîuiI∞˙    EîuœIaW    Eîv5Isl    EîvõIÒ∑    EîwIÌ¡    EîwgIáπ    EîwŒID"    Eîx4IÁ°    EîxöIœµ    Eîy Iñw    EîyfIÅ&    EîyÃI∫å    Eîz3IRï    EîzôIsH    EîzˇIw∞    Eî{eIÑ§    Eî{ÀI[-    Eî|1IœJ    Eî|òI§9    Eî|˛Iÿ    Eî}dI£    Eî} Iœÿ    Eî~0IÀ    Eî~ñILÚ    Eî~˝Iõ¨    EîcIÕ‰    Eî…I!≤    EîÄ/I…B    EîÄïI˜    EîÄ˚IW    EîÅbI˙9    EîÅ»Iî%    EîÇ.I8ˆ    EîÇîI    EîÇ˙Iö◊    EîÉ`It[    EîÉ«I„    EîÑ-Iœ    EîÑìIUB    EîÑ˘I(„    EîÖ_I^a    EîÖ≈IyI    EîÜ,I±˜    EîÜíI=n    EîÜ¯Iœd    Eîá^Iv    EîáƒI%*    Eîà*I$    EîàëIv    Eîà˜I¯ô    Eîâ]IåÕ    Eîâ√IÖÉ    Eîä)Isÿ    EîäèI¥R    EîäˆI‡)    Eîã\I˘«    Eîã¬I‹¿    Eîå(IÅN    EîåéIÓ€    EîåÙI¸@    Eîç[Is≤    Eîç¡Iª,    Eîé'I¨ø    EîéçIÔ*    EîéÛIÂ    EîèYI Á    Eîè¿Iá    Eîê&Iái    EîêåIxΩ    EîêÚI<¥    EîëXIÄ®    EîëæI∏‘    Eîí%IT    EîíãIël    EîíÒI8    EîìWIœV    EîìΩIw§    Eîî#IÆ»    EîîäIèS    EîîI'D    EîïVI‡v    EîïºIç£    Eîñ"I–v    EîñàI…ﬁ    EîñÔI˛    EîóUI#"    EîóªI9ã    Eîò!I^C    EîòáI7Í    EîòÌIS    EîôTIﬂ    Eîô∫I©Æ    Eîö Iˆ    EîöÜI°q    EîöÏISÁ    EîõRIL    EîõπI•     EîúIq^    EîúÖIòx    EîúÎI    EîùQI9    Eîù∑I›Ë    EîûI`√    EîûÑI2B    EîûÍIƒ    EîüPIV    Eîü∂IÕ"    Eî†IòË    Eî†ÉI;;    Eî†ÈI‰÷    Eî°OIÄ‹    Eî°µI∏'    Eî¢If§    Eî¢ÅIO    Eî¢ËI:“    Eî£NI-a    Eî£¥Iê    Eî§I˝B    Eî§ÄI9a    Eî§ÊIñ    Eî•MILŒ    Eî•≥I˛-    Eî¶I˝o    Eî¶I€    Eî¶ÂIO}    EîßKI‹è    Eîß≤Is    Eî®I{˚    Eî®~Ig    Eî®‰Iœ1    Eî©JIæ_    Eî©∞Iÿ    Eî™I†Œ    Eî™}Iâ%    Eî™„I`    Eî´IIDQ    Eî´ØIﬂm    Eî¨I!ù    Eî¨|IÑÒ    Eî¨‚I∆’    Eî≠HIr    Eî≠ÆI\Ç    EîÆItE    EîÆzIÊ…    EîÆ·IÆ    EîØGIœ·    EîØ≠I≤    Eî∞I-§    Eî∞yI”    Eî∞ﬂI¿≈    Eî±FI}∑    Eî±¨I«÷    Eî≤IÏH    Eî≤xI.    Eî≤ﬁI>/    Eî≥DIÿc    Eî≥´I“ÿ    Eî¥I˙Z    Eî¥wI˛?    Eî¥›IRj    EîµCI≥    Eîµ©IJ     Eî∂I›>    Eî∂vI ê    Eî∂‹IÌ    Eî∑BIÇ    Eî∑®IƒO    Eî∏I¨]    Eî∏uI∆/    Eî∏€Iı    EîπAI¯ﬂ    EîπßIÜØ    Eî∫Iƒﬂ    Eî∫sI3    Eî∫⁄Iﬂs    Eîª@Ik¶    Eîª¶Ié    EîºIÚÍ    EîºrI…◊    EîºÿI=Ï    EîΩ?IGØ    EîΩ•I    EîæI˘    EîæqI    Eîæ◊Iå´    Eîø=IœR    Eîø§Iß    Eî¿
+I[£    Eî¿pI^¢    Eî¿÷Iƒ#    Eî¡<I3≠    Eî¡¢IÒ    Eî¬	I9®    Eî¬oI
+ú    Eî¬’I~Ñ    Eî√;I–î    Eî√°Iq°    EîƒI\ÿ    EîƒnIÏM    Eîƒ‘IÄ8    Eî≈:I∆Ÿ    Eî≈†I∫    Eî∆I:è    Eî∆lIWK    Eî∆”IS    Eî«9I◊¢    Eî«üIüH    Eî»I¿    Eî»kI    Eî»“ID    Eî…8I…    Eî…ûI¥    Eî I±    Eî jI·Q    Eî –I    EîÀ7I»R    EîÀùIQ    EîÃIi    EîÃiId>    EîÃœI>√    EîÕ5Iºù    EîÕúIﬂ~    EîŒI*$    EîŒhIw!    EîŒŒI@´    Eîœ4IØ    EîœöI7    Eî–I)    Eî–gIi    Eî–ÕIw,    Eî—3I f    Eî—ôIó§    Eî—ˇI
+    Eî“fIp•    Eî“ÃIáç    Eî”2IäÕ    Eî”òIiï    Eî”˛IñF    Eî‘dImÑ    Eî‘ÀIJ(    Eî’1Iø    Eî’óIÔã    Eî’˝IÅ§    Eî÷cI¶∂    Eî÷…ILˆ    Eî◊0I    Eî◊ñI§l    Eî◊¸I’    EîÿbI[    Eîÿ»IËÃ    EîŸ.I∏b    EîŸïI#É    EîŸ˚IÄ;    Eî⁄aIô    Eî⁄«IM÷    Eî€-I,Ω    Eî€ìIAp    Eî€˙IÁ    Eî‹`I$Û    Eî‹∆IQö    Eî›,I±    Eî›íI’    Eî›¯I›ã    Eîﬁ_IÕ    Eîﬁ≈Iùn    Eîﬂ+I?–    EîﬂëI1ß    Eîﬂ˜I˝Ù    Eî‡]I∏/    Eî‡ƒI»„    Eî·*I§”    Eî·êIø     Eî·ˆIÀ„    Eî‚\I "    Eî‚¬I,T    Eî„)IŸ´    Eî„èI|L    Eî„ıI‡Õ    Eî‰[Iæñ    Eî‰¡I„[    EîÂ'I&ã    EîÂéIü¸    EîÂÙI¥    EîÊZIeü    EîÊ¿I´D    EîÁ&I    EîÁåI¬‡    EîÁÛI¥V    EîËYI•Æ    EîËøIÕ“    EîÈ%I
+ÓQ    EîÈãI
+ø…    EîÈÒI>    EîÍXI£∂    EîÍæI¬∏    EîÎ$IüÚ    EîÎäI†º    EîÎI°h    EîÏVIÇ∑    EîÏΩI˘X    EîÌ#I¿◊    EîÌâI+I    EîÌÔIV3    EîÓUI™     EîÓªIÓ!    EîÔ"Iπ.    EîÔàI6    EîÔÓI3©    EîTI     Eî∫Iéj    EîÒ Iﬂy    EîÒáI>∑    EîÒÌIñd    EîÚSIBÕ    EîÚπI–    EîÛI˛–    EîÛÖI†W    EîÛÏI
+¸R    EîÙRI›Ï    EîÙ∏IÒ    EîıI—    EîıÑIA    EîıÍI@Õ    EîˆQIæ    Eîˆ∑Ido    Eî˜I‡D    Eî˜ÉI*\    Eî˜ÈIŒı    Eî¯OI˘Ê    Eî¯∂I>     Eî˘I#≥    Eî˘ÇI˝)    Eî˘ËI”V    Eî˙NIw    Eî˙¥I1    Eî˚Iûn    Eî˚ÅIÑ    Eî˚ÁI◊    Eî¸MIa    Eî¸≥I}    Eî˝IÏi    Eî˝ÄI
+Úa    Eî˝ÊI¥#    Eî˛LI?4    Eî˛≤IVD    EîˇIÊ÷    Eîˇ~I≠,    EîˇÂIGı    Eï KIvã    Eï ±Iø    EïI·    Eï}IMh    Eï„Iöo    EïJIÓ∫    Eï∞I2›    EïI∫J    Eï|Iˆ¶    Eï‚I“    EïHI5l    EïØI^    EïIˆJ    Eï{If≤    Eï·I€¨    EïGI€º    Eï≠Iﬁc    EïI.    EïzIõ    Eï‡I"Œ    EïFI‡Ì    Eï¨Ii    Eï	IÜÆ    Eï	yI®.    Eï	ﬂI˚ó    Eï
+EI'Ì    Eï
+´Iúå    EïI
+√    EïwIã    EïﬁI0    EïDI,    Eï™I/G    EïIõp    EïvI
+˜     Eï‹I˛    EïCI
+ I    Eï©I
+Ûû    EïI ˆ    EïuI–i    Eï€I·Ñ    EïAI<    Eï®I‚ò    EïI«l    EïtIßp    Eï⁄Iüt    Eï@I'Ü    Eï¶I∞˙    EïI(ı    EïsI
+z∆    EïŸI$©    Eï?Iß§    Eï•I[π    EïI
+¯0    EïrI
+˝™    EïÿI     Eï>I
+˙®    Eï§I#˘    Eï
+I/ˆ    EïpI
+∆Ó    Eï◊I
+ıe    Eï=I|†    Eï£Iµ¯    Eï	I
+˙G    EïoI
+≤…    Eï’I
+Œ#    Eï<I
+è    Eï¢I
+˙¥    EïIÄÉ    EïnIu    Eï‘I
+Ãç    Eï:I#Ì    Eï°Ip…    EïI
+Ù    EïmI
+·í    Eï”I
+ú-    Eï9I#û    EïüIÖB    EïI0    EïlIYÖ    Eï“I'È    Eï 8I
+‰&    Eï ûIjr    Eï!IE(    Eï!kI3;    Eï!—I
+ÉË    Eï"7I
+Åç    Eï"ùI
+◊≥    Eï#I
+ü    Eï#iI
+y    Eï#–Iÿ    Eï$6I
+Ù,    Eï$úI&B    Eï%Ig#    Eï%hIcö    Eï%ŒI=‹    Eï&5I
+≥A    Eï&õI
+{¸    Eï'IoŸ    Eï'gIX‡    Eï'ÕIÏ·    Eï(3I
+©v    Eï(öI
+‚€    Eï) IY    Eï)fI
+T{    Eï)ÃI
+∆    Eï*2I?ﬂ    Eï*òI
+˜q    Eï*ˇI
+“I    Eï+eIû=    Eï+ÀI.,    Eï,1I
+€    Eï,óI
+\ı    Eï,˝IY’    Eï-dIú    Eï- I3Â    Eï.0I
+Lw    Eï.ñI
+I™    Eï.¸I5    Eï/bI	R>    Eï/…I
+’¯    Eï0/IÜc    Eï0ïIoe    Eï0˚I¨ª    Eï1aI,    Eï1«I
+Íæ    Eï2.I
+ˆæ    Eï2îI
+∞˛    Eï2˙Iæ    Eï3`I
+|    Eï3∆I    Eï4,I
+&¶    Eï4ìI
+®    Eï4˘I
+Œª    Eï5_I
+„m    Eï5≈I
+Ãö    Eï6+I
+Ó˘    Eï6ëI#    Eï6¯Iæ7    Eï7^Ir    Eï7ƒI ﬁ    Eï8*I
+ıb    Eï8êI˙    Eï8ˆI
+‚ÿ    Eï9]I´    Eï9√IZs    Eï:)I    Eï:èIXo    Eï:ıI#ÿ    Eï;[IJ    Eï;¬IÌï    Eï<(I?ø    Eï<éI‰    Eï<ÙI
+ü    Eï=ZI
+˙œ    Eï=¿IY6    Eï>'IX    Eï>çI
+Êÿ    Eï>ÛI÷    Eï?YI
+¿3    Eï?øIÏ•    Eï@%Ik    Eï@åI®S    Eï@ÚIc˛    EïAXI#j    EïAæI«∏    EïB$I
+t     EïBäI
+àê    EïBÒI«Û    EïCWI
+    EïCΩI
+ù.    EïD#I
+‡∫    EïDâI
+B    EïDÔI
+⁄ë    EïEVI+?    EïEºI
+∂ì    EïF"I
+Åˆ    EïFàI
+ÿ#    EïFÓId    EïGTI
+⁄g    EïGªI
+ŸK    EïH!I
+W    EïHáI
+Ï    EïHÌI	    EïISI
+ÒU    EïIπI
+R    EïJ Ié    EïJÜI
+’    EïJÏI†‡    EïKRInd    EïK∏Im    EïLIZ    EïLÖI
+≤Ö    EïLÎI∏O    EïMQI    EïM∑I
+oÉ    EïNI+w    EïNÉI
+êè    EïNÍI
+˝Y    EïOPIÑg    EïO∂Iu>    EïPI
+ßí    EïPÇIpı    EïPËI
+Øı    EïQOI
+>&    EïQµIáç    EïRIã∫    EïRÅI
+Î;    EïRÁILë    EïSMI
+–Ç    EïS¥I
+·û    EïTI
+ﬂ™    EïTÄIVµ    EïTÊI
+ÑÂ    EïULI	ã‡    EïU≥I
+Ì`    EïVI.∂    EïVI
+ÿ6    EïVÂI
+q:    EïWKI
+…ä    EïW±I
+◊ë    EïXI
+¸M    EïX~I
+§K    EïX‰I
+8<    EïYJI
+≥ˆ    EïY∞I/Q    EïZI
+∂ñ    EïZ}IVŸ    EïZ„IxÆ    Eï[IID»    Eï[ØI
+)=    Eï\I/π    Eï\{I9+    Eï\‚I    Eï]HI
+|“    Eï]ÆI
+ó≥    Eï^I	–    Eï^zI
+/º    Eï^‡I
+s∞    Eï_GI
+≤    Eï_≠I
+k|    Eï`IAA    Eï`yIı    Eï`ﬂI
+új    EïaEI
+[x    Eïa¨I
+˘	    EïbITı    EïbxI
+Ó    EïbﬁI	®¨    EïcDI	≈t    Eïc™I	…Î    EïdI
+Ã    EïdwI
+R7    Eïd›I
+¯    EïeCI
+√X    Eïe©I
+FV    EïfI
+¶    EïfvIH    Eïf‹It≠    EïgBI
+ºf    Eïg®I
+eÁ    EïhI
+*K    EïhtI
+ìÖ    Eïh€I
+†à    EïiAI
+≈"    EïißI
+ó~    EïjI
+,    EïjsI
+Ä›    EïjŸI
+éˇ    Eïk@I	˜÷    Eïk¶I
+ì8    EïlI
+¸w    EïlrI	·t    EïlÿI	˚Y    Eïm>I
+©t    Eïm•I
+U´    EïnI
+CÄ    EïnqI
+≈    Eïn◊I
+M¢    Eïo=I
+W¨    Eïo£Ieô    Eïp
+I
+ï’    EïppI
+ªÑ    Eïp÷I
+    Eïq<II…    Eïq¢I
+∂V    EïrI
+˘    EïroI
+b´    Eïr’I
+ãN    Eïs;I
+0Î    Eïs°I
+˙ˆ    EïtI
+ÿz    EïtmI,    Eït‘I
+ôñ    Eïu:I
+≥    Eïu†Iø    EïvI
+˜≈    EïvlI Ô    Eïv“IP    Eïw9I†•    EïwüI
+$$    EïxI
+€Â    EïxkI
+§    Eïx—I
+·2    Eïy7I
+j⁄    EïyûI
+ãl    EïzI/<    EïzjI
+P-    Eïz–I+F    Eï{6IÔÈ    Eï{úI
+    Eï|I⁄    Eï|iI
+L≠    Eï|œI
+C.    Eï}5I
+Ø—    Eï}õI	Å˝    Eï~I	Á‚    Eï~hI
+∫M    Eï~ŒIcõ    Eï4I	∆    EïöI
+©Ñ    EïÄ I
+Œ7    EïÄfI
+ÛJ    EïÄÕI	·A    EïÅ3I
+XJ    EïÅôI
+’    EïÅˇI
+\√    EïÇeI
+±    EïÇÀI
+∆4    EïÉ2I
+¨)    EïÉòI	ÎF    EïÉ˛I
+Ê≥    EïÑdI
+‹l    EïÑ I	jÇ    EïÖ0I
+o    EïÖóI	Ë∂    EïÖ˝I	1]    EïÜcI	Û    EïÜ…I
+´±    Eïá/I
+“    EïáïI	É    Eïá¸I	6]    EïàbI
+N∂    Eïà»I
+ñw    Eïâ.I	L    EïâîI	º†    Eïâ˙I	œœ    EïäaI	·    Eïä«I
+h    Eïã-I
+ßå    EïãìI
+w|    Eïã˘I
+%    Eïå_I	    Eïå∆I
+û    Eïç,I
+.é    EïçíI	lF    Eïç¯I	‘√    Eïé^I
+æø    EïéƒI	óü    Eïè+I	Bü    EïèëI
+$A    Eïè˜I	V    Eïê]I	çä    Eïê√I	p≥    Eïë)I
+≥µ    EïëêI	_®    EïëˆI	ã'    Eïí\I§º    Eïí¬I	{{    Eïì(I	˙v    EïìéI
+[Ù    EïìıI
+Ó    Eïî[I	.˝    Eïî¡I	]∫    Eïï'I
+˜:    EïïçI
+ä»    EïïÛI
+6.    EïñZI
+R    Eïñ¿I	ˆé    Eïó&I	i7    EïóåI	æ~    EïóÚIÑC    EïòXI	¬S    EïòøI	9u    Eïô%I	®    EïôãI	=€    EïôÒI
+<    EïöWI	‹∫    EïöΩI	‚k    Eïõ$I	π›    EïõäIºã    EïõI
+£    EïúVI	Â;    EïúºI
+5ü    Eïù"I
+¥    EïùâI	¡õ    EïùÔI	G
+    EïûUI	Ùß    EïûªI
+û    Eïü!I	{K    EïüáI	pˆ    EïüÓI	î¢    Eï†TI	Ã‡    Eï†∫Iˆó    Eï° I	zƒ    Eï°ÜIÂh    Eï°ÏI	2x    Eï¢SI
+ô    Eï¢πIÜ    Eï£I~u    Eï£ÖI	
+    Eï£ÎI	Ç    Eï§QI	F5    Eï§∏I
+(2    Eï•I	/ÿ    Eï•ÑIÅÑ    Eï•ÍI	*    Eï¶PI	5î    Eï¶∂I
+n„    EïßI	QÇ    EïßÉI
+&s    EïßÈI	bb    Eï®OI
+Ø    Eï®µI	–'    Eï©I∏-    Eï©ÇI
+Eç    Eï©ËI	ÿà    Eï™NI	X    Eï™¥I	TÇ    Eï´I
+ko    Eï´ÄI	Äµ    Eï´ÁI	ã    Eï¨MI	q‹    Eï¨≥I}µ    Eï≠I	πj    Eï≠I	Æ÷    Eï≠ÂI†L    EïÆLI	oﬁ    EïÆ≤I	∂Ö    EïØI
+     EïØ~IœÅ    EïØ‰I√x    Eï∞JIÄÒ    Eï∞±I	h˘    Eï±I
+`    Eï±}I	Ò    Eï±„I+/    Eï≤IIÇs    Eï≤ØIÃ“    Eï≥I‚`    Eï≥|I	ú›    Eï≥‚I	Œ˙    Eï¥HIS|    Eï¥ÆI
+'≥    EïµI
+OË    Eïµ{I	V˘    Eïµ·I å    Eï∂GI	[    Eï∂≠I¶ﬁ    Eï∑I
+π    Eï∑yI	⁄◊    Eï∑‡I∏π    Eï∏FI	    Eï∏¨I	?^    EïπI	‘    EïπxIee    EïπﬁIπ…    Eï∫EI	åå    Eï∫´I	≠`    EïªI	-ë    EïªwI	¥    Eïª›IΩÔ    EïºCI	|Z    Eïº™I	ìü    EïΩIÿ'    EïΩvI
+    EïΩ‹I	ú‘    EïæBI	°X    Eïæ®I	@C    EïøIù•    EïøuI
+.9    Eïø€I	~)    Eï¿AI	V,    Eï¿ßI«à    Eï¡I`Ò    Eï¡tIS√    Eï¡⁄I©    Eï¬@Ià9    Eï¬¶IÓ≈    Eï√I1–    Eï√rI	Eâ    Eï√ŸIﬂˆ    Eïƒ?IÎf    Eïƒ•IÔ´    Eï≈I	`    Eï≈qIÚœ    Eï≈◊I	ar    Eï∆>I	áG    Eï∆§I·X    Eï«
+I	E+    Eï«pIøq    Eï«÷Ihf    Eï»<I	1∞    Eï»£I(◊    Eï…	If    Eï…oIˆ1    Eï…’I	]!    Eï ;Is€    Eï °I	+    EïÀIoΩ    EïÀnI=    EïÀ‘I	Y    EïÃ:I	&    EïÃ†I	3¡    EïÕIÔ¡    EïÕmI	Ñ    EïÕ”I	ãÓ    EïŒ9I¨    EïŒüI	X    EïœI	lµ    EïœkI
+dí    Eïœ“I	9è    Eï–8IN≤    Eï–ûIÄÑ    Eï—I◊9    Eï—jI	pã    Eï—–Ié    Eï“7I	8x                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
