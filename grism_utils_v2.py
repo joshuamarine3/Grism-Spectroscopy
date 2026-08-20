@@ -1303,7 +1303,7 @@ class spectrum:
             y = self.spectrum[1] ; ax.set_ylabel('Uncalibrated flux (counts)')
         if yaxis == 'cal':
             fig.suptitle(f'{self.object_name} Calibrated Spectrum ({self.exp_time} s)', fontsize = 16)
-            ax.set_title(f'{self.obs_date} [Camera = {self.hdr["INSTRUME"]}]', fontsize = 10)
+            ax.set_title(f'{self.obs_date} [Camera = {self.hdr["INSTRUME"]}] |Calibrated by: {self.calib_spectrum.hdr['NBLKNAME']}|', fontsize = 10)
             y = self.cal_spec   ; ax.set_ylabel(r'Flux  (erg cm$^{-2}$ s$^{-1}$ Angstrom$^{-1}$)')
             ax.set_ylim(np.min(y[mask]) - np.std(y[mask]),np.max(y[mask])*1.2)
 

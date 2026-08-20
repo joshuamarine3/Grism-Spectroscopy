@@ -21,7 +21,8 @@ from astropy.io.fits import getdata
 import astropy.units as u
 import astropy.constants as const
 from astropy.time import Time
-from astropy.coordinates import EarthLocation, SkyCoord
+from astropy.coordinates import EarthLocation, SkyCoord, Angle
+from astropy.constants import c
 
 from scipy.ndimage import rotate, gaussian_filter1d, maximum_filter1d
 from scipy.optimize import curve_fit
@@ -151,6 +152,153 @@ def _build_spec_lookup(calib_spectra):
         if key is not None:
             lookup[key] = S
     return lookup
+
+def calculate_radial_velocity_correction(
+    header,
+    kind="heliocentric",
+    use_mid_exposure=True,
+):
+    """
+    Calculate the observer-motion radial-velocity correction for a spectrum.
+
+    This does not include the target's intrinsic/systemic radial velocity.
+
+    Parameters
+    ----------
+    header : astropy.io.fits.Header or dict-like
+        FITS header containing:
+
+        Required:
+            DATE-OBS
+            TELRA
+            TELDEC
+
+        Observatory coordinates:
+            OBSLAT
+            OBSLONG
+            OBSELEV
+
+        Optional:
+            EXPTIME
+
+    kind : {"heliocentric", "barycentric"}, default="heliocentric"
+        Reference frame for the radial-velocity correction.
+
+        Use "heliocentric" for BeSS metadata if you specifically want the
+        correction relative to the Sun.
+
+    use_mid_exposure : bool, default=True
+        If True and EXPTIME is available, calculate the correction at the
+        midpoint of the exposure rather than at DATE-OBS.
+
+    Returns
+    -------
+    result : dict
+        Dictionary containing:
+
+            time_start
+            time_correction
+            target_coord
+            observatory
+            velocity_correction
+            velocity_correction_kms
+            wavelength_factor_multiply
+            wavelength_factor_divide
+
+    Notes
+    -----
+    Astropy's radial_velocity_correction is the velocity that should be
+    added to an observed radial velocity to place it in the requested
+    reference frame.
+
+    The wavelength transformation depends on which direction you are
+    converting:
+
+        observed -> corrected:
+            lambda_corrected = lambda_observed / (1 + v_corr / c)
+
+        corrected -> observed:
+            lambda_observed = lambda_corrected * (1 + v_corr / c)
+    """
+
+    required_keys = [
+        "DATE-OBS",
+        "TELRA",
+        "TELDEC",
+        "OBSLAT",
+        "OBSLONG",
+        "OBSELEV",
+    ]
+
+    missing = [key for key in required_keys if key not in header]
+
+    if missing:
+        raise KeyError(
+            "Missing required FITS header keyword(s): "
+            + ", ".join(missing)
+        )
+
+    if kind not in {"heliocentric", "barycentric"}:
+        raise ValueError(
+            "kind must be either 'heliocentric' or 'barycentric'."
+        )
+
+    # Your TELRA values appear to be in hours, while TELDEC is in degrees.
+    target_coord = SkyCoord(
+        ra=float(header["TELRA"]) * u.hourangle,
+        dec=float(header["TELDEC"]) * u.deg,
+        frame="icrs",
+    )
+
+    observatory = EarthLocation.from_geodetic(
+        lon=Angle(header["OBSLONG"]),
+        lat=Angle(header["OBSLAT"]),
+        height=float(header["OBSELEV"]) * u.m,
+    )
+
+    time_start = Time(
+        header["DATE-OBS"],
+        format="isot",
+        scale="utc",
+        location=observatory,
+    )
+
+    time_correction = time_start
+
+    if use_mid_exposure:
+        exptime = header.get("EXPTIME", 0.0)
+
+        try:
+            exptime = float(exptime)
+        except (TypeError, ValueError):
+            exptime = 0.0
+
+        if np.isfinite(exptime) and exptime > 0:
+            time_correction = time_start + 0.5 * exptime * u.s
+
+    velocity_correction = target_coord.radial_velocity_correction(
+        kind=kind,
+        obstime=time_correction,
+    ).to(u.km / u.s)
+
+    beta = (
+        velocity_correction
+        / c.to(u.km / u.s)
+    ).to_value(u.dimensionless_unscaled)
+
+    multiply_factor = 1.0 + beta
+    divide_factor = 1.0 / multiply_factor
+
+    return {
+        "time_start": time_start,
+        "time_correction": time_correction,
+        "target_coord": target_coord,
+        "observatory": observatory,
+        "velocity_correction": velocity_correction,
+        "velocity_correction_kms": velocity_correction.to_value(u.km / u.s),
+        "wavelength_factor_multiply": multiply_factor,
+        "wavelength_factor_divide": divide_factor,
+    }
 
 
 def _save_calib_list_pickle(objects, filename, skip_flagged=False):
@@ -1049,20 +1197,50 @@ def attach_bin_averaged_calibrations_to_science_matches(matches, bin_avg_lookup,
     return matches
 
 def save_1d_spectrum_fits(S, output_path, match_row=None):
-    import os
-    import numpy as np
-    from astropy.io import fits
 
-    wave = np.asarray(S.waves, dtype=float)
-    flux = np.asarray(S.cal_spec, dtype=float)
+    # wave = np.asarray(S.waves, dtype=float)
+    # flux = np.asarray(S.cal_spec, dtype=float)
 
-    good = np.isfinite(wave) & np.isfinite(flux)
-    wave = wave[good]
-    flux = flux[good]
+    # good = np.isfinite(wave) & np.isfinite(flux)
+    # wave = wave[good]
+    # flux = flux[good]
 
-    order = np.argsort(wave)
-    wave = wave[order]
-    flux = flux[order]
+    # order = np.argsort(wave)
+    # wave = wave[order]
+    # flux = flux[order]
+
+    wave_native = np.asarray(S.waves, dtype=float)
+    flux_native = np.asarray(S.cal_spec, dtype=float)
+
+    # Remove invalid values
+    good = np.isfinite(wave_native) & np.isfinite(flux_native)
+    wave_native = wave_native[good]
+    flux_native = flux_native[good]
+
+    # Ensure monotonically increasing wavelength
+    order = np.argsort(wave_native)
+    wave_native = wave_native[order]
+    flux_native = flux_native[order]
+
+    # ------------------------------------------------------------------
+    # Resample nonlinear wavelength solution onto a truly linear grid.
+    # This is necessary because CRVAL1/CDELT1 describe a linear FITS axis.
+    # ------------------------------------------------------------------
+
+    dispersion = float(np.nanmedian(np.diff(wave_native)))
+
+    wave = np.arange(
+        wave_native[0],
+        wave_native[-1] + 0.5 * dispersion,
+        dispersion,
+        dtype=float,
+    )
+
+    flux = np.interp(
+        wave,
+        wave_native,
+        flux_native,
+    )
 
     # DS9-friendly: primary image is the flux vector
     hdu = fits.PrimaryHDU(data=flux.astype(np.float32))
@@ -1072,26 +1250,31 @@ def save_1d_spectrum_fits(S, output_path, match_row=None):
     if hasattr(S, "hdr") and S.hdr is not None:
         for key in [
             "BLKNAME", "DATE-OBS", "EXPTIME", "AIRMASS",
-            "FILTER", "INSTRUME", "OBSNAME", "TELRA", "TELDEC",
-            "MOONANGL", "MOONPHAS"
+            "FILTER", "OBSNAME", "OBSLAT", "OBSLONG", "OBSELEV",
+            "TELRA", "TELDEC", "MOONANGL", "MOONPHAS", "EQUINOX"
         ]:
             if key in S.hdr:
                 try:
-                    hdr[key] = S.hdr[key]
+                    # Retrieve the value and the corresponding comment
+                    val = S.hdr[key]
+                    comment = S.hdr.comments[key]
+                    # Assign both value and comment back to the destination header
+                    hdr[key] = (val, comment)
                 except Exception:
                     pass
 
-    hdr["PRODTYPE"] = "1D_SPEC"
-    hdr["BUNIT"] = "ergs/s/cm2/angstrom"
-    hdr["CTYPE1"] = "Wavelength"
-    hdr["CUNIT1"] = "Angstrom"
-    hdr["CRPIX1"] = 1
-    hdr["CRVAL1"] = float(wave[0])
+    hdr["PRODTYPE"] = ("1D_SPEC", "Data type")
+    hdr["BUNIT"] = ("ergs/s/cm2/angstrom", "Flux units")
+    hdr["CTYPE1"] = ("Wavelength", "Axis type")
+    hdr["CUNIT1"] = ("Angstrom", "Wavelength unit")
+    hdr["CRPIX1"] = (1, "Reference Pixel")
+    hdr["CRVAL1"] = (float(wave[0]), "Coordinate at reference pixel")
+    hdr["CDELT1"] = (float(dispersion),"Coordinate increment")
 
-    if len(wave) > 1:
-        hdr["CDELT1"] = float(np.nanmedian(np.diff(wave)))
-    else:
-        hdr["CDELT1"] = 1.0
+    # if len(wave) > 1:
+    #     hdr["CDELT1"] = (float(np.nanmedian(np.diff(wave))), "Coordinate increment")
+    # else:
+    #     hdr["CDELT1"] = (1.0, "Coordinate increment")
 
     hdr['FWHM'] = (float(getattr(S, "median_fwhm", np.nan)), "Spectral trace median fwhm (pixels)")
     hdr['FWHMSTD'] = (float(getattr(S, "std_fwhm", np.nan)), "Spectral trace fwhm std (pixels)")
@@ -1099,6 +1282,35 @@ def save_1d_spectrum_fits(S, output_path, match_row=None):
     hdr['TELLFAIL'] = (getattr(S, "telluric_fail", False), "Telluric fit failed, defaulted to median value")
     hdr["WAVECAL"] = True
     hdr["GAINCAL"] = True
+    # hdr['TELESCOP'] = ('Robert L. Mutel Telescope', "Name of the telescope")
+    hdr['TELESCOP'] = ('CDK20', "Name of the telescope")
+
+    if S.filter == 'hrg':
+            hdr['INSTRUME'] = ('H-alpha grism', "Name of the spectrograph")
+            hdr['SPEC_RES'] = (int(2000), "Typical instrument resolving power")
+    else:
+        hdr['INSTRUME'] = ('Low res grism', "Name of the spectrograph")
+        hdr['SPEC_RES'] = (int(400), "Typical instrument resolving power")
+
+    if S.hdr['INSTRUME'] == 'ASI Camera (1)':
+        hdr['DETNAM'] = ('ASI6200MM', "Name of the detector")
+    else:
+        hdr['DETNAM'] = ('QHY600MPCIE', "Name of the detector")
+
+    rv_result = calculate_radial_velocity_correction(
+        S.hdr,
+        kind="heliocentric",
+    )
+
+    hdr["HELIOVEL"] = (
+        rv_result["velocity_correction_kms"],
+        "[km/s] Heliocentric RV correction at mid-exposure",
+    )
+
+    hdr["RVCORR"] = (
+        False,
+        "Heliocentric correction applied to wavelength axis",
+    )
 
     if match_row is not None:
 
@@ -1192,7 +1404,8 @@ def main():
             print(f"Error: Invalid filter '{args.filter}'. Must be 'hrg' or 'lrg'.")
             sys.exit(1)
 
-        calib_targets = ['hr_718', 'hr_3454', 'hr_4468', 'hr_4963']
+        # calib_targets = ['hr_718', 'hr_3454', 'hr_4468', 'hr_4963']
+        calib_targets = ['hr_3454', 'hr_4963', 'Alpha_Lyr']
 
         calib_target_pattern = re.compile(
             r"(?<![A-Za-z0-9])(" + "|".join(re.escape(t) for t in calib_targets) + r")(?![A-Za-z0-9])",
