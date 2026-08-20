@@ -50,6 +50,8 @@
     - simplifited_fit_utils.py
       - Same as fit_utils.py but for this one
   -  Model_Spectra_Fitting.ipynb
+    - As a preface, this notebook requires the actual library of model spectra. If desired, 
+    contact me for access.
     - This notebook takes a grid of model spectra for a Be star + disk and performs a 
     figure of merit minimization algorithm to find the best fitting synthetic spectra to 
     observations, where each model spectra is associated with a configuration of system 
