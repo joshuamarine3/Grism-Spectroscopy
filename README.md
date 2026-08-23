@@ -75,3 +75,6 @@
     thousands of checkboxes. Thank you Philip!
   - bess_downloads
     - Folder containing various downloaded bess spectra
+  - get_grism_data.py
+    - Script for downloading grism data from Chronos with ability to specify a single date or 
+    date range
